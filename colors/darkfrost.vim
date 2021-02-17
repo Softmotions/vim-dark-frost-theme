@@ -13,7 +13,7 @@ endif
 let colors_name = "darkfrost"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi ColorColumn ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
+    hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#202733 guifg=NONE gui=NONE
     hi Comment ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi Constant ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
@@ -34,7 +34,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Identifier ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi Ignore ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi IncSearch ctermbg=71 ctermfg=231 cterm=NONE guibg=#5faf5f guifg=#ffffff gui=NONE
-    hi LineNr ctermbg=234 ctermfg=241 cterm=NONE guibg=#12171e guifg=#676E95 gui=NONE
+    hi LineNr ctermbg=235 ctermfg=241 cterm=NONE guibg=#202733 guifg=#676E95 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
@@ -49,7 +49,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Question ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
     hi Search ctermbg=90 ctermfg=231 cterm=NONE guibg=#8B008B guifg=#ffffff gui=NONE
-    hi SignColumn ctermbg=234 ctermfg=241 cterm=NONE guibg=#12171e guifg=#676E95 gui=NONE
+    hi SignColumn ctermbg=235 ctermfg=241 cterm=NONE guibg=#202733 guifg=#676E95 gui=NONE
     hi Special ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=168 cterm=undercurl guibg=NONE guifg=#EF586C gui=undercurl guisp=#EF586C
@@ -78,6 +78,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi debugPC ctermbg=146 ctermfg=NONE cterm=NONE guibg=#9DC4FF guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
@@ -155,6 +156,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi debugPC ctermbg=blue ctermfg=NONE cterm=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
