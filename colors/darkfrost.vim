@@ -13,7 +13,7 @@ endif
 let colors_name = "darkfrost"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi ColorColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#202733 guifg=NONE gui=NONE
     hi Comment ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi Constant ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
@@ -93,7 +93,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi ColorColumn ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi ColorColumn ctermbg=black ctermfg=NONE cterm=NONE
     hi Comment ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=gray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=darkyellow cterm=NONE
