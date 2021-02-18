@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-02-17
+" Last Change: 2021-02-18
 
 hi clear
 
@@ -79,6 +79,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
+    hi helpHyperTextJump ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
@@ -157,6 +158,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
+    hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
