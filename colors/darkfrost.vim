@@ -21,7 +21,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorColumn ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLine ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLineNr ctermbg=237 ctermfg=188 cterm=NONE guibg=#303b4d guifg=#C9D6E7 gui=NONE
-    hi DiffAdd ctermbg=235 ctermfg=71 cterm=NONE guibg=#202733 guifg=#5faf5f gui=NONE
+    hi DiffAdd ctermbg=235 ctermfg=65 cterm=NONE guibg=#202733 guifg=#5f875f gui=NONE
     hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#202733 guifg=#FFC142 gui=NONE
     hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#202733 guifg=#aa0000 gui=NONE
     hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#202733 guifg=#FFC142 gui=reverse
@@ -33,7 +33,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Function ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
     hi Identifier ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi Ignore ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
-    hi IncSearch ctermbg=71 ctermfg=231 cterm=NONE guibg=#5faf5f guifg=#ffffff gui=NONE
+    hi IncSearch ctermbg=65 ctermfg=231 cterm=NONE guibg=#5f875f guifg=#ffffff gui=NONE
     hi LineNr ctermbg=235 ctermfg=241 cterm=NONE guibg=#202733 guifg=#676E95 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
@@ -43,7 +43,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Operator ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi Pmenu ctermbg=237 ctermfg=188 cterm=NONE guibg=#303b4d guifg=#C9D6E7 gui=NONE
     hi PmenuSbar ctermbg=188 ctermfg=NONE cterm=NONE guibg=#C9D6E7 guifg=NONE gui=NONE
-    hi PmenuSel ctermbg=71 ctermfg=255 cterm=NONE guibg=#5faf5f guifg=#e6e6ff gui=NONE
+    hi PmenuSel ctermbg=65 ctermfg=255 cterm=NONE guibg=#5f875f guifg=#e6e6ff gui=NONE
     hi PmenuThumb ctermbg=241 ctermfg=241 cterm=NONE guibg=#676E95 guifg=#676E95 gui=NONE
     hi PreProc ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
     hi Question ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
@@ -214,7 +214,7 @@ hi link htmlSpecialTagName htmlTagName
 let g:terminal_ansi_colors = [
         \ '#202733',
         \ '#d7005f',
-        \ '#5faf5f',
+        \ '#5f875f',
         \ '#E98C6E',
         \ '#82AAFF',
         \ '#8B008B',
