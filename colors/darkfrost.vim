@@ -64,7 +64,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineFill ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
     hi TabLineSel ctermbg=235 ctermfg=168 cterm=NONE guibg=#202733 guifg=#EF586C gui=NONE
     hi Title ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi Todo ctermbg=NONE ctermfg=231 cterm=undercurl,bold guibg=NONE guifg=#ffffff gui=undercurl,bold
+    hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
     hi ToolbarButton ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
     hi ToolbarLine ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
     hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#FFC142 gui=NONE
@@ -144,7 +144,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineFill ctermbg=black ctermfg=gray cterm=NONE
     hi TabLineSel ctermbg=black ctermfg=red cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
-    hi Todo ctermbg=NONE ctermfg=white cterm=undercurl,bold
+    hi Todo ctermbg=NONE ctermfg=white cterm=underline,bold
     hi ToolbarButton ctermbg=black ctermfg=gray cterm=NONE
     hi ToolbarLine ctermbg=black ctermfg=NONE cterm=NONE
     hi Type ctermbg=NONE ctermfg=yellow cterm=NONE
