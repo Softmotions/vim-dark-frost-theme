@@ -10,6 +10,8 @@ if exists("syntax_on")
   syntax reset
 endif
 
+set background=dark
+
 let colors_name = "darkfrost"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
@@ -40,6 +42,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi MoreMsg ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
     hi NonText ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
     hi Normal ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
+    hi NormalCode ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi Operator ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi Pmenu ctermbg=237 ctermfg=188 cterm=NONE guibg=#303b4d guifg=#C9D6E7 gui=NONE
     hi PmenuSbar ctermbg=188 ctermfg=NONE cterm=NONE guibg=#C9D6E7 guifg=NONE gui=NONE
@@ -80,6 +83,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
+    hi Keyword ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
@@ -120,6 +124,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi MoreMsg ctermbg=NONE ctermfg=cyan cterm=NONE
     hi NonText ctermbg=black ctermfg=gray cterm=NONE
     hi Normal ctermbg=black ctermfg=gray cterm=NONE
+    hi NormalCode ctermbg=NONE ctermfg=gray cterm=NONE
     hi Operator ctermbg=NONE ctermfg=white cterm=NONE
     hi Pmenu ctermbg=black ctermfg=gray cterm=NONE
     hi PmenuSbar ctermbg=gray ctermfg=NONE cterm=NONE
@@ -160,6 +165,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi Keyword ctermbg=NONE ctermfg=gray cterm=NONE
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
@@ -186,7 +192,6 @@ hi link Float Number
 hi link HelpCommand Statement
 hi link HelpExample Statement
 hi link Incude PreProc
-hi link Keyword Normal
 hi link Label Statement
 hi link Macro PreProc
 hi link Number Constant
@@ -210,6 +215,9 @@ hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link htmlSpecialTagName htmlTagName
+hi link LspCxxHlSymVariable NormalCode
+hi link LspCxxHlSymUnknown NormalCode
+hi link LspCxxHlSymUnknownStaticField NormalCode
 
 let g:terminal_ansi_colors = [
         \ '#202733',

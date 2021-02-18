@@ -153,6 +153,7 @@
         [ "MoreMsg", "NONE", cyan, "NONE" ],
         [ "NonText", black, gray, "NONE" ],
         [ "Normal", black, gray, "NONE" ],
+        [ "NormalCode", "NONE", gray, "NONE" ],
         [ "Operator", "NONE", white, "NONE" ],
         [ "Pmenu", deepgray, gray, "NONE" ],
         [ "PmenuSbar", gray, "NONE", "NONE" ],
@@ -208,7 +209,7 @@
         [ "HelpCommand", "Statement" ],
         [ "HelpExample", "Statement" ],
         [ "Incude", "PreProc" ],
-        [ "Keyword", "Normal" ],
+        [ "Keyword", "NONE", gray, "NONE"],
         [ "Label", "Statement" ],
         [ "Macro", "PreProc" ],
         [ "Number", "Constant" ],
@@ -243,8 +244,11 @@
         [ "LspCxxHlGroupMemberVariable", "NONE", white, "NONE" ],
         [ "LspCxxHlSymField", "NONE", white, "NONE" ],
         [ "CocErrorSign", "NONE", red, "bold" ],
-        [ "LspCxxHlGroupEnumConstant", "NONE", mediumcyan, "NONE" ]
-
+        [ "LspCxxHlGroupEnumConstant", "NONE", mediumcyan, "NONE" ],
+        [ "LspCxxHlSymVariable", "NormalCode" ],
+        [ "LspCxxHlSymUnknown", "NormalCode" ],
+        [ "LspCxxHlSymUnknownStaticField", "NormalCode" ] 
+        # NvimSpacing 
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -383,6 +387,8 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
+
+set background=dark
 
 let colors_name = "<%= information[:name].downcase %>"
 
