@@ -88,6 +88,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi LspCxxHlSymField ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
+    hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -167,6 +168,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
     hi LspCxxHlSymField ctermbg=NONE ctermfg=white cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
+    hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
