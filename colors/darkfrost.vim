@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-02-21
+" Last Change: 2021-02-22
 
 hi clear
 
@@ -89,7 +89,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi LspCxxHlSymParameter ctermbg=NONE ctermfg=255 cterm=italic guibg=NONE guifg=#e6e6ff gui=italic
     hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
+    hi LspCxxHlSymField ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
 
@@ -170,7 +170,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi LspCxxHlSymParameter ctermbg=NONE ctermfg=white cterm=italic
     hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=darkblue cterm=NONE
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=white cterm=NONE
+    hi LspCxxHlSymField ctermbg=NONE ctermfg=gray cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE
 endif
