@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-02-18
+" Last Change: 2021-02-21
 
 hi clear
 
@@ -43,7 +43,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi NonText ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
     hi Normal ctermbg=235 ctermfg=188 cterm=NONE guibg=#202733 guifg=#C9D6E7 gui=NONE
     hi NormalCode ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
-    hi Operator ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi Pmenu ctermbg=237 ctermfg=188 cterm=NONE guibg=#303b4d guifg=#C9D6E7 gui=NONE
     hi PmenuSbar ctermbg=188 ctermfg=NONE cterm=NONE guibg=#C9D6E7 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=65 ctermfg=255 cterm=NONE guibg=#5f875f guifg=#e6e6ff gui=NONE
@@ -125,7 +124,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi NonText ctermbg=black ctermfg=gray cterm=NONE
     hi Normal ctermbg=black ctermfg=gray cterm=NONE
     hi NormalCode ctermbg=NONE ctermfg=gray cterm=NONE
-    hi Operator ctermbg=NONE ctermfg=white cterm=NONE
     hi Pmenu ctermbg=black ctermfg=gray cterm=NONE
     hi PmenuSbar ctermbg=gray ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
@@ -195,6 +193,7 @@ hi link Incude PreProc
 hi link Label Statement
 hi link Macro PreProc
 hi link Number Constant
+hi link Operator Statement
 hi link PreCondit PreProc
 hi link QuickFixLine Search
 hi link Repeat Statement
