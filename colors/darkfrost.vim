@@ -84,14 +84,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpHyperTextJump ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
     hi Keyword ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
-    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=255 cterm=italic guibg=NONE guifg=#e6e6ff gui=italic
-    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
-    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
+    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
+    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
+    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
+    hi LspCxxHlSymField ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#C9D6E7 gui=NONE
+    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=255 cterm=italic guibg=NONE guifg=#e6e6ff gui=italic
+    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -165,14 +165,14 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
     hi Keyword ctermbg=NONE ctermfg=gray cterm=NONE
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
-    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
-    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=white cterm=italic
-    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=darkblue cterm=NONE
-    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=gray cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE
+    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
+    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
+    hi LspCxxHlSymField ctermbg=NONE ctermfg=gray cterm=NONE
+    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=white cterm=italic
+    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=darkblue cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
@@ -214,9 +214,10 @@ hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link htmlSpecialTagName htmlTagName
-hi link LspCxxHlSymVariable NormalCode
+hi link LspCxxHlSymFunction Function
 hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
+hi link LspCxxHlSymVariable NormalCode
 
 let g:terminal_ansi_colors = [
         \ '#202733',
