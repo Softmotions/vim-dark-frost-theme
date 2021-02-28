@@ -232,6 +232,7 @@
         [ "diffNoEOL", "WarningMsg" ],
         [ "diffOnly", "WarningMsg" ],
         [ "diffRemoved", "WarningMsg" ],
+
         # Html 
         [ "htmlTagName", "NONE", red, "NONE" ],
         [ "htmlSpecialTagName", "htmlTagName"],
@@ -248,8 +249,12 @@
         [ "LspCxxHlSymPrimitive", "NONE", darkblue, "NONE" ],
         [ "LspCxxHlSymUnknown", "NormalCode" ],
         [ "LspCxxHlSymUnknownStaticField", "NormalCode" ],
-        [ "LspCxxHlSymVariable", "NormalCode" ]
-        # NvimSpacing 
+        [ "LspCxxHlSymVariable", "NormalCode" ],
+
+        # Treesitter
+        [ "TSKeyword", "Statement"],
+        [ "TSLabel", "NONE", yellow, "bold"]
+
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
