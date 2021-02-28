@@ -92,7 +92,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi LspCxxHlSymField ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi LspCxxHlSymParameter ctermbg=NONE ctermfg=255 cterm=italic guibg=NONE guifg=#e6e6ff gui=italic
     hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
-    hi TSLabel ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#FFC142 gui=bold
+    hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -174,7 +174,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi LspCxxHlSymField ctermbg=NONE ctermfg=gray cterm=NONE
     hi LspCxxHlSymParameter ctermbg=NONE ctermfg=white cterm=italic
     hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=darkblue cterm=NONE
-    hi TSLabel ctermbg=NONE ctermfg=yellow cterm=bold
+    hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
 endif
 
 hi link StatusLineTerm StatusLine
