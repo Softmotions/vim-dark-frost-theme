@@ -27,12 +27,12 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#202733 guifg=#FFC142 gui=NONE
     hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#202733 guifg=#aa0000 gui=NONE
     hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#202733 guifg=#FFC142 gui=reverse
-    hi Directory ctermbg=NONE ctermfg=177 cterm=bold guibg=NONE guifg=#D597F2 gui=bold
+    hi Directory ctermbg=NONE ctermfg=183 cterm=bold guibg=NONE guifg=#d7afff gui=bold
     hi Error ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi FoldColumn ctermbg=234 ctermfg=252 cterm=NONE guibg=#12171e guifg=#d0d0d0 gui=NONE
     hi Folded ctermbg=234 ctermfg=252 cterm=NONE guibg=#12171e guifg=#d0d0d0 gui=NONE
-    hi Function ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
+    hi Function ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi Ignore ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi IncSearch ctermbg=65 ctermfg=231 cterm=NONE guibg=#5f875f guifg=#ffffff gui=NONE
@@ -56,7 +56,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpecialKey ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=168 cterm=undercurl guibg=NONE guifg=#EF586C gui=undercurl guisp=#EF586C
     hi SpellCap ctermbg=NONE ctermfg=146 cterm=undercurl guibg=NONE guifg=#9DC4FF gui=undercurl guisp=#9DC4FF
-    hi SpellLocal ctermbg=NONE ctermfg=177 cterm=undercurl guibg=NONE guifg=#D597F2 gui=undercurl guisp=#D597F2
+    hi SpellLocal ctermbg=NONE ctermfg=183 cterm=undercurl guibg=NONE guifg=#d7afff gui=undercurl guisp=#d7afff
     hi SpellRare ctermbg=NONE ctermfg=117 cterm=undercurl guibg=NONE guifg=#89DDFF gui=undercurl guisp=#89DDFF
     hi Statement ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
     hi StatusLine ctermbg=235 ctermfg=255 cterm=NONE guibg=#202733 guifg=#e6e6ff gui=NONE
@@ -81,7 +81,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi helpHyperTextJump ctermbg=NONE ctermfg=177 cterm=NONE guibg=NONE guifg=#D597F2 gui=NONE
+    hi helpHyperTextJump ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi Keyword ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
@@ -241,7 +241,7 @@ let g:terminal_ansi_colors = [
         \ '#B4E47D',
         \ '#FFC142',
         \ '#9DC4FF',
-        \ '#D597F2',
+        \ '#d7afff',
         \ '#89DDFF',
         \ '#e6e6ff',
         \ ]
