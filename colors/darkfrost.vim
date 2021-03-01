@@ -228,6 +228,7 @@ hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
 hi link LspCxxHlSymVariable NormalCode
 hi link TSKeyword Statement
+hi link TSOperator Normal
 
 let g:terminal_ansi_colors = [
         \ '#202733',
