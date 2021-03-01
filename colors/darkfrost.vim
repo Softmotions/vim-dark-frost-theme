@@ -95,7 +95,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi TSBoolean ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
+    hi TSBoolean ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -180,7 +180,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=white cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
-    hi TSBoolean ctermbg=NONE ctermfg=darkblue cterm=NONE
+    hi TSBoolean ctermbg=NONE ctermfg=blue cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
