@@ -96,6 +96,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSPunctBracket ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
     hi TSBoolean ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
+    hi TSOperator ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -181,6 +182,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSPunctBracket ctermbg=NONE ctermfg=white cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
     hi TSBoolean ctermbg=NONE ctermfg=blue cterm=NONE
+    hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
@@ -228,7 +230,6 @@ hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
 hi link LspCxxHlSymVariable NormalCode
 hi link TSKeyword Statement
-hi link TSOperator Normal
 
 let g:terminal_ansi_colors = [
         \ '#202733',
