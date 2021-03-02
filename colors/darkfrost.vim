@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-03-01
+" Last Change: 2021-03-02
 
 hi clear
 
@@ -17,12 +17,12 @@ let colors_name = "darkfrost"
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#202733 guifg=NONE gui=NONE
     hi Comment ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
-    hi Conceal ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi Conceal ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Constant ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi Cursor ctermbg=229 ctermfg=NONE cterm=NONE guibg=#ffffaf guifg=NONE gui=NONE
     hi CursorColumn ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLine ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
-    hi CursorLineNr ctermbg=237 ctermfg=252 cterm=NONE guibg=#303b4d guifg=#d0d0d0 gui=NONE
+    hi CursorLineNr ctermbg=237 ctermfg=251 cterm=NONE guibg=#303b4d guifg=#bfc7d5 gui=NONE
     hi DiffAdd ctermbg=235 ctermfg=65 cterm=NONE guibg=#202733 guifg=#5f875f gui=NONE
     hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#202733 guifg=#FFC142 gui=NONE
     hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#202733 guifg=#aa0000 gui=NONE
@@ -30,22 +30,22 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Directory ctermbg=NONE ctermfg=183 cterm=bold guibg=NONE guifg=#d7afff gui=bold
     hi Error ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
-    hi FoldColumn ctermbg=234 ctermfg=252 cterm=NONE guibg=#12171e guifg=#d0d0d0 gui=NONE
-    hi Folded ctermbg=234 ctermfg=252 cterm=NONE guibg=#12171e guifg=#d0d0d0 gui=NONE
+    hi FoldColumn ctermbg=234 ctermfg=251 cterm=NONE guibg=#12171e guifg=#bfc7d5 gui=NONE
+    hi Folded ctermbg=234 ctermfg=251 cterm=NONE guibg=#12171e guifg=#bfc7d5 gui=NONE
     hi Function ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
-    hi Identifier ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi Identifier ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Ignore ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi IncSearch ctermbg=65 ctermfg=231 cterm=NONE guibg=#5f875f guifg=#ffffff gui=NONE
     hi LineNr ctermbg=235 ctermfg=241 cterm=NONE guibg=#202733 guifg=#676E95 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
-    hi NonText ctermbg=235 ctermfg=252 cterm=NONE guibg=#202733 guifg=#d0d0d0 gui=NONE
-    hi Normal ctermbg=235 ctermfg=252 cterm=NONE guibg=#202733 guifg=#d0d0d0 gui=NONE
-    hi NormalCode ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Pmenu ctermbg=237 ctermfg=252 cterm=NONE guibg=#303b4d guifg=#d0d0d0 gui=NONE
-    hi PmenuSbar ctermbg=252 ctermfg=NONE cterm=NONE guibg=#d0d0d0 guifg=NONE gui=NONE
-    hi PmenuSel ctermbg=65 ctermfg=255 cterm=NONE guibg=#5f875f guifg=#e6e6ff gui=NONE
+    hi NonText ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
+    hi Normal ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
+    hi NormalCode ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
+    hi Pmenu ctermbg=237 ctermfg=251 cterm=NONE guibg=#303b4d guifg=#bfc7d5 gui=NONE
+    hi PmenuSbar ctermbg=251 ctermfg=NONE cterm=NONE guibg=#bfc7d5 guifg=NONE gui=NONE
+    hi PmenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
     hi PmenuThumb ctermbg=241 ctermfg=241 cterm=NONE guibg=#676E95 guifg=#676E95 gui=NONE
     hi PreProc ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
     hi Question ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
@@ -59,22 +59,22 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=183 cterm=undercurl guibg=NONE guifg=#d7afff gui=undercurl guisp=#d7afff
     hi SpellRare ctermbg=NONE ctermfg=117 cterm=undercurl guibg=NONE guifg=#89DDFF gui=undercurl guisp=#89DDFF
     hi Statement ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
-    hi StatusLine ctermbg=235 ctermfg=255 cterm=NONE guibg=#202733 guifg=#e6e6ff gui=NONE
-    hi StatusLineNC ctermbg=235 ctermfg=252 cterm=NONE guibg=#202733 guifg=#d0d0d0 gui=NONE
+    hi StatusLine ctermbg=235 ctermfg=254 cterm=NONE guibg=#202733 guifg=#e4e4e4 gui=NONE
+    hi StatusLineNC ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
     hi String ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
-    hi TabLine ctermbg=235 ctermfg=255 cterm=NONE guibg=#202733 guifg=#e6e6ff gui=NONE
-    hi TabLineFill ctermbg=235 ctermfg=252 cterm=NONE guibg=#202733 guifg=#d0d0d0 gui=NONE
+    hi TabLine ctermbg=235 ctermfg=254 cterm=NONE guibg=#202733 guifg=#e4e4e4 gui=NONE
+    hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
     hi TabLineSel ctermbg=235 ctermfg=168 cterm=NONE guibg=#202733 guifg=#EF586C gui=NONE
-    hi Title ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
+    hi Title ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
-    hi ToolbarButton ctermbg=235 ctermfg=252 cterm=NONE guibg=#202733 guifg=#d0d0d0 gui=NONE
+    hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
     hi ToolbarLine ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
     hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#FFC142 gui=NONE
     hi Typedef ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi Underlined ctermbg=NONE ctermfg=NONE cterm=underline guibg=NONE guifg=NONE gui=underline
     hi VertSplit ctermbg=NONE ctermfg=16 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi Visual ctermbg=30 ctermfg=255 cterm=NONE guibg=#00758f guifg=#e6e6ff gui=NONE
-    hi VisualNOS ctermbg=30 ctermfg=255 cterm=underline guibg=#00758f guifg=#e6e6ff gui=underline
+    hi Visual ctermbg=30 ctermfg=254 cterm=NONE guibg=#00758f guifg=#e4e4e4 gui=NONE
+    hi VisualNOS ctermbg=30 ctermfg=254 cterm=underline guibg=#00758f guifg=#e4e4e4 gui=underline
     hi WarningMsg ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#FFC142 gui=bold
     hi debugBreakpoint ctermbg=168 ctermfg=NONE cterm=NONE guibg=#EF586C guifg=NONE gui=NONE
     hi debugPC ctermbg=146 ctermfg=NONE cterm=NONE guibg=#9DC4FF guifg=NONE gui=NONE
@@ -82,21 +82,21 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
-    hi Keyword ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi Keyword ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
-    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
+    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=255 cterm=italic guibg=NONE guifg=#e6e6ff gui=italic
+    hi LspCxxHlSymField ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
+    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=254 cterm=italic guibg=NONE guifg=#e4e4e4 gui=italic
     hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
-    hi TSPunctBracket ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi TSParameter ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#e6e6ff gui=NONE
-    hi TSOperator ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi TSPunctDelimiter ctermbg=NONE ctermfg=252 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi TSPunctBracket ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
+    hi TSParameter ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
+    hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
+    hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -240,7 +240,7 @@ let g:terminal_ansi_colors = [
         \ '#82AAFF',
         \ '#8B008B',
         \ '#00758f',
-        \ '#d0d0d0',
+        \ '#bfc7d5',
         \ '#676E95',
         \ '#EF586C',
         \ '#B4E47D',
@@ -248,7 +248,7 @@ let g:terminal_ansi_colors = [
         \ '#9DC4FF',
         \ '#d7afff',
         \ '#89DDFF',
-        \ '#e6e6ff',
+        \ '#e4e4e4',
         \ ]
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)
