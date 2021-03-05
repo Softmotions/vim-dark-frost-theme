@@ -63,13 +63,12 @@
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
 
     black       = ["#202733", 235, "black"]        # #262626 Background   
-    darkred     = ["#d7005f", 161, "darkred"]      # JS/TS var, html tag  #d7005f
+    darkred     = ["#d7005f", 161, "darkred"]      # JS/TS var, html tag 
     darkyellow  = ["#E98C6E", 173, "darkyellow"]   # #d7875f Numbers, literals, html attrs 
     darkgreen   = ["#5f875f", 65,  "darkgreen"]    # Sel 
-    darkblue    = ["#82AAFF", 111, "darkblue"]     # #87afff Primitive type
+    darkblue    = ["#82AAFF", 111, "darkblue"]     # Primitive type
     darkmagenta = ["#8B008B", 90,  "darkmagenta"]  # #870087
     darkcyan    = ["#00758f", 30,  "darkcyan"]     # #008787
-    #gray        = ["#c6c6c6", 251, "gray"]         # #d0d0d0  Normal :text
     gray        = ["#bfc7d5", 251, "gray"]         # #d0d0d0  Normal :text
     darkgray    = ["#676E95", 241, "darkgray"]     # #626262 Comment 
     red         = ["#EF586C", 168, "red"]          # #ff5f87
@@ -77,7 +76,7 @@
     yellow      = ["#FFC142", 215, "yellow"]       # #ffaf5f Type 
     blue        = ["#9DC4FF", 146, "blue"]         # #afafd7 Tokens if/operators/
     magenta     = ["#d7afff", 183, "magenta"]      # #d787ff Functions  
-    cyan        = ["#89DDFF", 117, "cyan"]         # ##87d7ff 
+    cyan        = ["#89DDFF", 117, "cyan"]         # #87d7ff 
     white       = ["#e4e4e4", 254, "white"]        # #d7d7ff Bright args 
 
     purewhite   = ["#ffffff", 231, "white"]
@@ -85,7 +84,7 @@
     deepred     = ["#aa0000", 124, "red"]          # #af0000
     deepgray    = ["#303b4d", 237, "black"]        # #3a3a3a
     deepblack   = ["#12171e", 234, "black"]        # #1c1c1c
-    lightyellow  = ["#ffffaf", 229, "yellow"]      # #ffffaf
+    lightyellow = ["#ffffaf", 229, "yellow"]      
     mediumcyan  = ["#5fafd7", 74, "cyan"]
 
     # Step 4: highlights
@@ -256,12 +255,16 @@
 
         # Treesitter
         [ "TSKeyword", "Statement"],
-        [ "TSLabel", "NONE", blue, "underline"],
-        [ "TSPunctBracket", "NONE", white, "NONE"],
+        [ "TSLabel", "NONE", blue, "underline" ],
+        [ "TSPunctBracket", "NONE", white, "NONE" ],
         [ "TSParameter", "NONE", white, "NONE" ],
         [ "TSBoolean", "Constant"],
         [ "TSOperator", "NONE", gray, "NONE" ], 
         [ "TSPunctDelimiter", "NONE", gray, "NONE" ], 
+        
+        # Typecript
+        [ "typescriptParens", "NormalCode"]
+
 
     ]
 

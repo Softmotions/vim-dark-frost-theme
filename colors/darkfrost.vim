@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-03-02
+" Last Change: 2021-03-05
 
 hi clear
 
@@ -231,6 +231,7 @@ hi link LspCxxHlSymUnknownStaticField NormalCode
 hi link LspCxxHlSymVariable NormalCode
 hi link TSKeyword Statement
 hi link TSBoolean Constant
+hi link typescriptParens NormalCode
 
 let g:terminal_ansi_colors = [
         \ '#202733',
