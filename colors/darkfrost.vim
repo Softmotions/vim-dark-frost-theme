@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-03-07
+" Last Change: 2021-04-05
 
 hi clear
 
@@ -77,7 +77,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi VisualNOS ctermbg=30 ctermfg=254 cterm=underline guibg=#00758f guifg=#e4e4e4 gui=underline
     hi WarningMsg ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#FFC142 gui=bold
     hi debugBreakpoint ctermbg=168 ctermfg=NONE cterm=NONE guibg=#EF586C guifg=NONE gui=NONE
-    hi debugPC ctermbg=146 ctermfg=NONE cterm=NONE guibg=#9DC4FF guifg=NONE gui=NONE
+    hi debugPC ctermbg=30 ctermfg=NONE cterm=NONE guibg=#00758f guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
@@ -164,7 +164,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi VisualNOS ctermbg=darkcyan ctermfg=white cterm=underline
     hi WarningMsg ctermbg=NONE ctermfg=yellow cterm=bold
     hi debugBreakpoint ctermbg=red ctermfg=NONE cterm=NONE
-    hi debugPC ctermbg=blue ctermfg=NONE cterm=NONE
+    hi debugPC ctermbg=darkcyan ctermfg=NONE cterm=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
