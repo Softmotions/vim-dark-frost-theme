@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-04-05
+" Last Change: 2021-05-05
 
 hi clear
 
@@ -83,6 +83,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi Keyword ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
+    hi GitSignsAdd ctermbg=NONE ctermfg=65 cterm=bold guibg=NONE guifg=#5f875f gui=bold
+    hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ff0000 gui=bold
+    hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
@@ -170,6 +173,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
     hi Keyword ctermbg=NONE ctermfg=gray cterm=NONE
+    hi GitSignsAdd ctermbg=NONE ctermfg=darkgreen cterm=bold
+    hi GitSignsDelete ctermbg=NONE ctermfg=red cterm=bold
+    hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE

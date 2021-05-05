@@ -85,7 +85,10 @@
     deepgray    = ["#303b4d", 237, "black"]        # #3a3a3a
     deepblack   = ["#12171e", 234, "black"]        # #1c1c1c
     lightyellow = ["#ffffaf", 229, "yellow"]      
-    mediumcyan  = ["#5fafd7", 74, "cyan"]
+    mediumcyan  = ["#5fafd7", 74,  "cyan"]
+    pureyellow  = ["#ffff00", 11,  "yellow"]
+    puregreen   = ["#00ff00", 10,  "green"]
+    purered     = ["#ff0000", 9,   "red"] 
 
     # Step 4: highlights
     #
@@ -232,6 +235,11 @@
         [ "diffNoEOL", "WarningMsg" ],
         [ "diffOnly", "WarningMsg" ],
         [ "diffRemoved", "WarningMsg" ],
+        
+        # Git signs
+        [ "GitSignsAdd", "NONE", darkgreen, "bold" ],
+        [ "GitSignsDelete", "NONE", purered, "bold" ],
+        [ "GitSignsChange", "NONE", pureyellow, "bold" ],
 
         # Html / XML 
         [ "htmlTagName", "NONE", red, "NONE" ],
