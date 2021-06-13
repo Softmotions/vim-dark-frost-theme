@@ -101,7 +101,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
-    hi TSNumber ctermbg=NONE ctermfg=180 cterm=NONE guibg=NONE guifg=#d8c87c gui=NONE
+    hi TSNumber ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -192,7 +192,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
-    hi TSNumber ctermbg=NONE ctermfg=yellow cterm=NONE
+    hi TSNumber ctermbg=NONE ctermfg=red cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
