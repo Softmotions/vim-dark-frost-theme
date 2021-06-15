@@ -1,6 +1,6 @@
 # Dark frost color theme for Vim
 
-This Vim theme is inspired by VSCode sandricoprovo/dark-frost-vscode-theme and intendend primary for `Treesitter & Java/C/C++/HTML/CSS`
+This Vim theme is inspired by VSCode sandricoprovo/dark-frost-vscode-theme and intendend primary for Treesitter & Java/C/C++/HTML/CSS
 
 ![screenshot](./screen.png)
 
