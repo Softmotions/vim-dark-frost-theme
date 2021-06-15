@@ -2,6 +2,8 @@
 
 This Vim theme is inspired by VSCode [sandricoprovo/dark-frost-vscode-theme](https://github.com/sandricoprovo/dark-frost-vscode-theme) and intendend primary for `C/HTML/CSS` languages.
 
+![screenshot](./screen.png)
+
 ## Installation
 
 Just copy `colors/darkfrost.vim` to `~/.vim/colors`
@@ -23,7 +25,3 @@ Enable 24-bit compatibility:
 ```vim
 set termguicolors
 ```
-
-## Screenshot
-
-![screenshot](./screen.png)
