@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-06-13
+" Last Change: 2021-06-25
 
 hi clear
 
@@ -59,8 +59,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=183 cterm=undercurl guibg=NONE guifg=#d7afff gui=undercurl guisp=#d7afff
     hi SpellRare ctermbg=NONE ctermfg=117 cterm=undercurl guibg=NONE guifg=#89DDFF gui=undercurl guisp=#89DDFF
     hi Statement ctermbg=NONE ctermfg=146 cterm=NONE guibg=NONE guifg=#9DC4FF gui=NONE
-    hi StatusLine ctermbg=235 ctermfg=254 cterm=NONE guibg=#202733 guifg=#e4e4e4 gui=NONE
-    hi StatusLineNC ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
+    hi StatusLine ctermbg=16 ctermfg=254 cterm=NONE guibg=#000000 guifg=#e4e4e4 gui=NONE
+    hi StatusLineNC ctermbg=16 ctermfg=251 cterm=NONE guibg=#000000 guifg=#bfc7d5 gui=NONE
     hi String ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi TabLine ctermbg=235 ctermfg=254 cterm=NONE guibg=#202733 guifg=#e4e4e4 gui=NONE
     hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#202733 guifg=#bfc7d5 gui=NONE
