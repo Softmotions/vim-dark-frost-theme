@@ -90,6 +90,7 @@
     altyellow   = ["#d8c87c", 180, "yellow"]
     puregreen   = ["#00ff00", 10,  "green"]
     purered     = ["#ff0000", 9,   "red"]     
+    darkorange  = ["#d75f00", 166, "darkyellow"]
 
     # Step 4: highlights
     #
@@ -275,12 +276,14 @@
         [ "TSTag", "htmlTagName" ],
         [ "TSTagDelimiter", "NONE", magenta, "NONE" ],
         [ "TSNumber", "NONE", red, "NONE"],
-      
 
         # Typecript
-        [ "typescriptParens", "NormalCode"]
+        [ "typescriptParens", "NormalCode"],
 
-
+        # Statusline
+        [ "ErrorSL", deepred, white, "NONE" ],
+        [ "WarningSL", darkorange, white, "NONE" ],
+        [ "GroupSL", darkgray, white, "NONE" ]
     ]
 
     # Define the color palette used by :terminal when in GUI Vim

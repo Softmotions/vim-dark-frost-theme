@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-06-25
+" Last Change: 2021-06-26
 
 hi clear
 
@@ -102,6 +102,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi TSNumber ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
+    hi ErrorSL ctermbg=124 ctermfg=254 cterm=NONE guibg=#aa0000 guifg=#e4e4e4 gui=NONE
+    hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
+    hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -193,6 +196,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
     hi TSNumber ctermbg=NONE ctermfg=red cterm=NONE
+    hi ErrorSL ctermbg=red ctermfg=white cterm=NONE
+    hi WarningSL ctermbg=darkyellow ctermfg=white cterm=NONE
+    hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
