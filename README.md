@@ -1,6 +1,6 @@
 # Dark Frost Color Scheme for Neovim/Vim 
 
-Vim color scheme inspired by VSCode sandricoprovo/dark-frost-vscode-theme and intendend primary for Treesitter & Java/C/C++/HTML/CSS
+Vim color scheme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
 
 ![screenshot](./screen.png)
 
