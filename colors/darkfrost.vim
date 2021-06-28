@@ -104,6 +104,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi JanetString ctermbg=NONE ctermfg=107 cterm=NONE guibg=NONE guifg=#87af5f gui=NONE
+    hi JanetSymbol ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi ErrorSL ctermbg=124 ctermfg=254 cterm=NONE guibg=#aa0000 guifg=#e4e4e4 gui=NONE
     hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
     hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
@@ -200,6 +201,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi JanetString ctermbg=NONE ctermfg=green cterm=NONE
+    hi JanetSymbol ctermbg=NONE ctermfg=gray cterm=NONE
     hi ErrorSL ctermbg=red ctermfg=white cterm=NONE
     hi WarningSL ctermbg=darkyellow ctermfg=white cterm=NONE
     hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
