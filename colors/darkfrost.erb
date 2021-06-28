@@ -216,7 +216,7 @@
         [ "Keyword", "NONE", gray, "NONE"],
         [ "Label", "Statement" ],
         [ "Macro", "PreProc" ],
-        [ "Number", "Constant" ],
+        [ "Number", "NONE", red, "NONE" ],
         [ "Operator", "Statement"],
         [ "PreCondit", "PreProc" ],
         [ "QuickFixLine", "Search" ],
@@ -275,10 +275,14 @@
         [ "TSPunctDelimiter", "NONE", gray, "NONE" ], 
         [ "TSTag", "htmlTagName" ],
         [ "TSTagDelimiter", "NONE", magenta, "NONE" ],
-        [ "TSNumber", "NONE", red, "NONE"],
+        [ "TSNumber", "Number" ],
 
         # Typecript
         [ "typescriptParens", "NormalCode"],
+
+
+        # Janet
+        [ "JanetKeyword", "NONE", red , "NONE" ],
 
         # Statusline
         [ "ErrorSL", deepred, white, "NONE" ],

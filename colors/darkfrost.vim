@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-06-26
+" Last Change: 2021-06-28
 
 hi clear
 
@@ -83,6 +83,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SignatureMarkText ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi Keyword ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
+    hi Number ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi GitSignsAdd ctermbg=NONE ctermfg=65 cterm=bold guibg=NONE guifg=#5f875f gui=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ff0000 gui=bold
     hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
@@ -101,7 +102,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
-    hi TSNumber ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
+    hi JanetKeyword ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi ErrorSL ctermbg=124 ctermfg=254 cterm=NONE guibg=#aa0000 guifg=#e4e4e4 gui=NONE
     hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
     hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
@@ -177,6 +178,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SignatureMarkText ctermbg=NONE ctermfg=red cterm=NONE
     hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
     hi Keyword ctermbg=NONE ctermfg=gray cterm=NONE
+    hi Number ctermbg=NONE ctermfg=red cterm=NONE
     hi GitSignsAdd ctermbg=NONE ctermfg=darkgreen cterm=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=red cterm=bold
     hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
@@ -195,7 +197,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
-    hi TSNumber ctermbg=NONE ctermfg=red cterm=NONE
+    hi JanetKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi ErrorSL ctermbg=red ctermfg=white cterm=NONE
     hi WarningSL ctermbg=darkyellow ctermfg=white cterm=NONE
     hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
@@ -218,7 +220,6 @@ hi link HelpExample Statement
 hi link Incude PreProc
 hi link Label Statement
 hi link Macro PreProc
-hi link Number Constant
 hi link Operator Statement
 hi link PreCondit PreProc
 hi link QuickFixLine Search
@@ -250,6 +251,7 @@ hi link TSBoolean Constant
 hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
 hi link TSTag htmlTagName
+hi link TSNumber Number
 hi link typescriptParens NormalCode
 
 let g:terminal_ansi_colors = [
