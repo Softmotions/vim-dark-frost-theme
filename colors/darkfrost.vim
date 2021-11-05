@@ -246,6 +246,8 @@ hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link htmlSpecialTagName htmlTagName
 hi link xmlTagname htmlTagname
+hi link htmlArg TSTagAttribute
+hi link htmlTag TSOperator
 hi link LspCxxHlSymFunction Function
 hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
@@ -258,7 +260,8 @@ hi link TSTag htmlTagName
 hi link TSNumber Number
 hi link typescriptArrayMethod TSMethod
 hi link typescriptArrayStaticMethod TSMethod
-hi link typescriptAsyncFuncKeyword TSKeyword
+hi link typescriptAsyncFuncKeyword TSKeywordFunction
+hi link typescriptBraces TSPunctBracket
 hi link typescriptCall TSParameter
 hi link typescriptConsoleMethod TSMethod
 hi link typescriptDateMethod TSMethod
@@ -274,7 +277,7 @@ hi link typescriptNumberMethod TSMethod
 hi link typescriptObjectMethod TSMethod
 hi link typescriptObjectStaticMethod TSMethod
 hi link typescriptOperator TSKeywordOperator
-hi link typescriptParens NormalCode
+hi link typescriptParens TSPunctBracket
 hi link typescriptPromiseStaticMethod TSMethod
 hi link typescriptRegExpMethod TSMethod
 hi link typescriptStringMethod TSMethod
@@ -282,7 +285,6 @@ hi link typescriptStringStaticMethod TSMethod
 hi link typescriptTypeReference TSType
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
-hi link typescriptBraces TSPunctBracket
 hi link JanetStringDelimiter JanetString
 
 let g:terminal_ansi_colors = [
