@@ -264,6 +264,7 @@ hi link typescriptConsoleMethod TSMethod
 hi link typescriptDateMethod TSMethod
 hi link typescriptExport TSKeyword
 hi link typescriptFuncKeyword TSKeyword
+hi link typescriptFuncName TSMethod
 hi link typescriptFunctionMethod TSMethod
 hi link typescriptGlobalMethod TSMethod
 hi link typescriptImport TSInclude
