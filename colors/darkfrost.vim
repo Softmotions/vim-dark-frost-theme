@@ -281,6 +281,7 @@ hi link typescriptStringStaticMethod TSMethod
 hi link typescriptTypeReference TSType
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
+hi link typescriptBraces TSPunctBracket
 hi link JanetStringDelimiter JanetString
 
 let g:terminal_ansi_colors = [
