@@ -248,6 +248,7 @@ hi link htmlSpecialTagName htmlTagName
 hi link xmlTagname htmlTagname
 hi link htmlArg TSTagAttribute
 hi link htmlTag TSOperator
+hi link svelteBrace TSPunctBracket
 hi link LspCxxHlSymFunction Function
 hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
