@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-06-28
+" Last Change: 2021-11-05
 
 hi clear
 
@@ -256,7 +256,31 @@ hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
 hi link TSTag htmlTagName
 hi link TSNumber Number
+hi link typescriptArrayMethod TSMethod
+hi link typescriptArrayStaticMethod TSMethod
+hi link typescriptAsyncFuncKeyword TSKeyword
+hi link typescriptCall TSParameter
+hi link typescriptConsoleMethod TSMethod
+hi link typescriptDateMethod TSMethod
+hi link typescriptExport TSKeyword
+hi link typescriptFuncKeyword TSKeyword
+hi link typescriptFunctionMethod TSMethod
+hi link typescriptGlobalMethod TSMethod
+hi link typescriptImport TSInclude
+hi link typescriptJSONStaticMethod TSMethod
+hi link typescriptNull TSConstBuiltin
+hi link typescriptNumberMethod TSMethod
+hi link typescriptObjectMethod TSMethod
+hi link typescriptObjectStaticMethod TSMethod
+hi link typescriptOperator TSKeywordOperator
 hi link typescriptParens NormalCode
+hi link typescriptPromiseStaticMethod TSMethod
+hi link typescriptRegExpMethod TSMethod
+hi link typescriptStringMethod TSMethod
+hi link typescriptStringStaticMethod TSMethod
+hi link typescriptTypeReference TSType
+hi link typescriptUnion TSPunctDelimiter
+hi link typescriptVariable TSKeyword
 hi link JanetStringDelimiter JanetString
 
 let g:terminal_ansi_colors = [
