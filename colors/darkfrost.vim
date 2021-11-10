@@ -251,6 +251,7 @@ hi link htmlTag TSOperator
 hi link htmlValue NormalCode
 hi link svelteBrace TSPunctBracket
 hi link svelteShortProp svelteExpression
+hi link svelteValue svelteExpression
 hi link svelteExpression htmlValue
 hi link LspCxxHlSymFunction Function
 hi link LspCxxHlSymUnknown NormalCode
