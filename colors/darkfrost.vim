@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2021-11-05
+" Last Change: 2021-11-10
 
 hi clear
 
@@ -248,7 +248,10 @@ hi link htmlSpecialTagName htmlTagName
 hi link xmlTagname htmlTagname
 hi link htmlArg TSTagAttribute
 hi link htmlTag TSOperator
+hi link htmlValue NormalCode
 hi link svelteBrace TSPunctBracket
+hi link svelteShortProp svelteExpression
+hi link svelteExpression htmlValue
 hi link LspCxxHlSymFunction Function
 hi link LspCxxHlSymUnknown NormalCode
 hi link LspCxxHlSymUnknownStaticField NormalCode
@@ -259,31 +262,31 @@ hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
 hi link TSTag htmlTagName
 hi link TSNumber Number
-hi link typescriptArrayMethod TSMethod
-hi link typescriptArrayStaticMethod TSMethod
+hi link typescriptArrayMethod Function
+hi link typescriptArrayStaticMethod Function
 hi link typescriptAsyncFuncKeyword TSKeywordFunction
 hi link typescriptBraces TSPunctBracket
 hi link typescriptCall TSParameter
-hi link typescriptConsoleMethod TSMethod
-hi link typescriptDateMethod TSMethod
+hi link typescriptConsoleMethod Function
+hi link typescriptDateMethod Function
 hi link typescriptExport TSKeyword
 hi link typescriptFuncKeyword TSKeyword
-hi link typescriptFuncName TSMethod
-hi link typescriptFunctionMethod TSMethod
-hi link typescriptGlobalMethod TSMethod
-hi link typescriptImport TSInclude
-hi link typescriptJSONStaticMethod TSMethod
+hi link typescriptFuncName Function
+hi link typescriptFunctionMethod Function
+hi link typescriptGlobalMethod Function
+hi link typescriptImport Include
+hi link typescriptJSONStaticMethod Function
 hi link typescriptNull TSConstBuiltin
-hi link typescriptNumberMethod TSMethod
-hi link typescriptObjectMethod TSMethod
-hi link typescriptObjectStaticMethod TSMethod
+hi link typescriptNumberMethod Function
+hi link typescriptObjectMethod Function
+hi link typescriptObjectStaticMethod Function
 hi link typescriptOperator TSKeywordOperator
 hi link typescriptParens TSPunctBracket
-hi link typescriptPromiseStaticMethod TSMethod
-hi link typescriptRegExpMethod TSMethod
-hi link typescriptStringMethod TSMethod
-hi link typescriptStringStaticMethod TSMethod
-hi link typescriptTypeReference TSType
+hi link typescriptPromiseStaticMethod Function
+hi link typescriptRegExpMethod Function
+hi link typescriptStringMethod Function
+hi link typescriptStringStaticMethod Function
+hi link typescriptTypeReference Type
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
 hi link JanetStringDelimiter JanetString
