@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-08-05
+" Last Change: 2022-08-22
 
 hi clear
 
@@ -109,6 +109,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ErrorSL ctermbg=124 ctermfg=254 cterm=NONE guibg=#aa0000 guifg=#e4e4e4 gui=NONE
     hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
     hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
+    hi IlluminatedWordText ctermbg=239 ctermfg=NONE cterm=NONE guibg=#3b485e guifg=NONE gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -207,6 +208,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi ErrorSL ctermbg=red ctermfg=white cterm=NONE
     hi WarningSL ctermbg=darkyellow ctermfg=white cterm=NONE
     hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
+    hi IlluminatedWordText ctermbg=darkgray ctermfg=NONE cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
@@ -295,6 +297,8 @@ hi link typescriptTypeReference Type
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
 hi link JanetStringDelimiter JanetString
+hi link IlluminatedWordRead IlluminatedWordText
+hi link IlluminatedWordWrite IlluminatedWordText
 
 let g:terminal_ansi_colors = [
         \ '#1e2531',

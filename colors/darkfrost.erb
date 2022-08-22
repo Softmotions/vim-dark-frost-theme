@@ -92,6 +92,7 @@
     puregreen   = ["#00ff00", 10,  "green"]
     purered     = ["#ff0000", 9,   "red"]     
     darkorange  = ["#d75f00", 166, "darkyellow"]
+    markgrey    = ["#3b485e", 239, "darkgray"]
 
     # Step 4: highlights
     #
@@ -331,7 +332,12 @@
         # Statusline
         [ "ErrorSL", deepred, white, "NONE" ],
         [ "WarningSL", darkorange, white, "NONE" ],
-        [ "GroupSL", darkgray, white, "NONE" ]
+        [ "GroupSL", darkgray, white, "NONE" ],
+
+        # Vim illuminate
+        [ "IlluminatedWordText", markgrey, "NONE", "NONE" ],
+        [ "IlluminatedWordRead", "IlluminatedWordText"],
+        [ "IlluminatedWordWrite", "IlluminatedWordText"]
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
