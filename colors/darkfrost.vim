@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-08-22
+" Last Change: 2022-09-16
 
 hi clear
 
@@ -90,6 +90,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
+    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
+    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
@@ -189,6 +191,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
+    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE
     hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
     hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
