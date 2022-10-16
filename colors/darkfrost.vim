@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-10-09
+" Last Change: 2022-10-16
 
 hi clear
 
@@ -87,25 +87,18 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi GitSignsAdd ctermbg=NONE ctermfg=65 cterm=bold guibg=NONE guifg=#5f875f gui=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ff0000 gui=bold
     hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
-    hi htmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
-    hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
-    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
-    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
-    hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
-    hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=74 cterm=NONE guibg=NONE guifg=#5fafd7 gui=NONE
-    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
-    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
-    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
-    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=254 cterm=italic guibg=NONE guifg=#e4e4e4 gui=italic
-    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#82AAFF gui=NONE
+    hi xmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
+    hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
+    hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
+    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
+    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
+    hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
     hi JanetKeyword ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi JanetString ctermbg=NONE ctermfg=107 cterm=NONE guibg=NONE guifg=#87af5f gui=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
@@ -189,25 +182,18 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi GitSignsAdd ctermbg=NONE ctermfg=darkgreen cterm=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=red cterm=bold
     hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
-    hi htmlTagName ctermbg=NONE ctermfg=red cterm=NONE
-    hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
-    hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
-    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
-    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
-    hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
-    hi LspCxxHlGroupEnumConstant ctermbg=NONE ctermfg=cyan cterm=NONE
-    hi LspCxxHlGroupMemberVariable ctermbg=NONE ctermfg=white cterm=NONE
-    hi LspCxxHlSkippedRegion ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi LspCxxHlSkippedRegionBeginEnd ctermbg=NONE ctermfg=red cterm=NONE
-    hi LspCxxHlSymField ctermbg=NONE ctermfg=gray cterm=NONE
-    hi LspCxxHlSymParameter ctermbg=NONE ctermfg=white cterm=italic
-    hi LspCxxHlSymPrimitive ctermbg=NONE ctermfg=darkblue cterm=NONE
+    hi xmlTagName ctermbg=NONE ctermfg=red cterm=NONE
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=white cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
     hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
+    hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
+    hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi JanetKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi JanetString ctermbg=NONE ctermfg=green cterm=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=gray cterm=NONE
@@ -255,27 +241,31 @@ hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link MatchTag Underlined
-hi link htmlSpecialTagName htmlTagName
-hi link xmlTagname htmlTagname
+hi link xmlArg Type
 hi link xmlCdata NormalCode
-hi link htmlArg TSTagAttribute
-hi link htmlTag TSOperator
+hi link xmlTag Function
+hi link htmlTagName xmlTagName
+hi link htmlArg xmlArg
+hi link htmlSpecialTagName xmlTagName
+hi link htmlTag xmlTag
 hi link htmlValue NormalCode
-hi link svelteBrace TSPunctBracket
-hi link svelteShortProp svelteExpression
-hi link svelteValue svelteExpression
-hi link svelteExpression htmlValue
-hi link CocErrorFloat CocErrorSign
-hi link LspCxxHlSymFunction Function
-hi link LspCxxHlSymUnknown NormalCode
-hi link LspCxxHlSymUnknownStaticField NormalCode
-hi link LspCxxHlSymVariable NormalCode
 hi link TSKeyword Statement
 hi link TSBoolean Constant
 hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
 hi link TSTag htmlTagName
 hi link TSNumber Number
+hi link svelteBrace TSPunctBracket
+hi link svelteShortProp svelteExpression
+hi link svelteValue svelteExpression
+hi link svelteExpression htmlValue
+hi link @keyword TSKeyword
+hi link @string String
+hi link @type Type
+hi link @constructor NormalCode
+hi link @tag htmlTagname
+hi link @tag.attribute htmlArg
+hi link @tag.delimiter xmlTag
 hi link typescriptArrayMethod Function
 hi link typescriptArrayStaticMethod Function
 hi link typescriptAsyncFuncKeyword TSKeywordFunction
@@ -303,6 +293,7 @@ hi link typescriptStringStaticMethod Function
 hi link typescriptTypeReference Type
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
+hi link CocErrorFloat CocErrorSign
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
 hi link IlluminatedWordRead IlluminatedWordText

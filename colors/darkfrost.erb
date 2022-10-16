@@ -246,45 +246,20 @@
         [ "GitSignsChange", "NONE", pureyellow, "bold" ],
 
         # Html / XML 
-        
         [ "MatchTag", "Underlined" ],
 
-        [ "htmlTagName", "NONE", red, "NONE" ],
-        [ "htmlSpecialTagName", "htmlTagName" ],
-        [ "xmlTagname", "htmlTagname" ],
+        [ "xmlArg", "Type" ],
         [ "xmlCdata", "NormalCode" ],
-        [ "htmlArg", "TSTagAttribute" ],
-        [ "htmlTag", "TSOperator" ],
+        [ "xmlTag", "Function" ],
+        [ "xmlTagName", "NONE", red, "NONE" ],
+
+        [ "htmlTagName", "xmlTagName" ],
+        [ "htmlArg", "xmlArg" ],
+        [ "htmlSpecialTagName", "xmlTagName" ],
+        [ "htmlTag", "xmlTag" ],
         [ "htmlValue", "NormalCode" ],
 
-        # Svelte
-        [ "svelteBrace", "TSPunctBracket" ],
-        [ "svelteShortProp", "svelteExpression" ],
-        [ "svelteValue", "svelteExpression" ],
-        [ "svelteExpression", "htmlValue" ],
-      
-
-        # https://github.com/jackguo380/vim-lsp-cxx-highlight/blob/master/syntax/lsp_cxx_highlight.vim 
-        [ "CocErrorSign", "NONE", red, "bold" ],
-        [ "CocErrorFloat", "CocErrorSign" ],
-        [ "CocMenuSel", darkgreen, white, "NONE" ],
-        [ "CocErrorHighlight", "NONE", "NONE", "undercurl", red ],
-        [ "CocWarningHighlight", "NONE", "NONE", "undercurl", darkgray ],
-        [ "CocInfoHighlight", "NONE", "NONE", "undercurl", darkgray ],
-
-        [ "LspCxxHlGroupEnumConstant", "NONE", mediumcyan, "NONE" ],
-        [ "LspCxxHlGroupMemberVariable", "NONE", white, "NONE" ],
-        [ "LspCxxHlSkippedRegion", "NONE", darkgray, "NONE" ],
-        [ "LspCxxHlSkippedRegionBeginEnd", "NONE", red, "NONE" ],
-        [ "LspCxxHlSymField", "NONE", gray, "NONE" ],
-        [ "LspCxxHlSymFunction", "Function" ],
-        [ "LspCxxHlSymParameter", "NONE", white, "italic" ],
-        [ "LspCxxHlSymPrimitive", "NONE", darkblue, "NONE" ],
-        [ "LspCxxHlSymUnknown", "NormalCode" ],
-        [ "LspCxxHlSymUnknownStaticField", "NormalCode" ],
-        [ "LspCxxHlSymVariable", "NormalCode" ],
-
-        # Treesitter
+        # Treesitter (old)
         [ "TSKeyword", "Statement"],
         [ "TSLabel", "NONE", blue, "underline" ],
         [ "TSPunctBracket", "NONE", white, "NONE" ],
@@ -297,6 +272,24 @@
         [ "TSTag", "htmlTagName" ],
         [ "TSTagDelimiter", "NONE", magenta, "NONE" ],
         [ "TSNumber", "Number" ],
+
+        # Svelte (old)
+        [ "svelteBrace", "TSPunctBracket" ],
+        [ "svelteShortProp", "svelteExpression" ],
+        [ "svelteValue", "svelteExpression" ],
+        [ "svelteExpression", "htmlValue" ],
+
+        # Treesitter misc
+        [ "@keyword", "TSKeyword" ],
+        [ "@string", "String" ],
+        [ "@type", "Type" ],
+        #[ "@text", "NormalCode" ],
+        #[ "@variable", "NormalCode" ],
+        [ "@constructor", "NormalCode" ],
+
+        [ "@tag", "htmlTagname" ],
+        [ "@tag.attribute", "htmlArg" ],
+        [ "@tag.delimiter", "xmlTag" ],
 
         # Yats (typescript)
         [ "typescriptArrayMethod", "Function" ],
@@ -326,6 +319,14 @@
         [ "typescriptTypeReference", "Type" ],
         [ "typescriptUnion", "TSPunctDelimiter" ],
         [ "typescriptVariable", "TSKeyword" ],
+
+        # CoC
+        [ "CocErrorSign", "NONE", red, "bold" ],
+        [ "CocErrorFloat", "CocErrorSign" ],
+        [ "CocMenuSel", darkgreen, white, "NONE" ],
+        [ "CocErrorHighlight", "NONE", "NONE", "undercurl", red ],
+        [ "CocWarningHighlight", "NONE", "NONE", "undercurl", darkgray ],
+        [ "CocInfoHighlight", "NONE", "NONE", "undercurl", darkgray ],
 
         # Janet
         [ "JanetKeyword", "NONE", red , "NONE" ],
