@@ -263,6 +263,10 @@ hi link @keyword TSKeyword
 hi link @string String
 hi link @type Type
 hi link @constructor NormalCode
+hi link @operator Operator
+hi link @punctuation.special Special
+hi link @constant.builtin Special
+hi link @boolean Special
 hi link @tag htmlTagname
 hi link @tag.attribute htmlArg
 hi link @tag.delimiter xmlTag
