@@ -87,7 +87,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi GitSignsAdd ctermbg=NONE ctermfg=65 cterm=bold guibg=NONE guifg=#5f875f gui=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ff0000 gui=bold
     hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
-    hi xmlTagName ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
+    hi xmlTagName ctermbg=NONE ctermfg=245 cterm=bold guibg=NONE guifg=#8a8a8a gui=bold
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
@@ -182,7 +182,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi GitSignsAdd ctermbg=NONE ctermfg=darkgreen cterm=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=red cterm=bold
     hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
-    hi xmlTagName ctermbg=NONE ctermfg=red cterm=NONE
+    hi xmlTagName ctermbg=NONE ctermfg=darkgray cterm=bold
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
     hi TSPunctBracket ctermbg=NONE ctermfg=white cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
@@ -243,7 +243,7 @@ hi link diffRemoved WarningMsg
 hi link MatchTag Underlined
 hi link xmlArg Type
 hi link xmlCdata NormalCode
-hi link xmlTag Function
+hi link xmlTag xmlTagName
 hi link htmlTagName xmlTagName
 hi link htmlArg xmlArg
 hi link htmlSpecialTagName xmlTagName
