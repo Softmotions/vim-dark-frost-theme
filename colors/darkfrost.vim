@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-10-16
+" Last Change: 2022-10-17
 
 hi clear
 
@@ -62,9 +62,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusLine ctermbg=16 ctermfg=254 cterm=NONE guibg=#000000 guifg=#e4e4e4 gui=NONE
     hi StatusLineNC ctermbg=16 ctermfg=251 cterm=NONE guibg=#000000 guifg=#bfc7d5 gui=NONE
     hi String ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
-    hi TabLine ctermbg=235 ctermfg=254 cterm=NONE guibg=#1e2531 guifg=#e4e4e4 gui=NONE
+    hi TabLine ctermbg=235 ctermfg=241 cterm=NONE guibg=#1e2531 guifg=#676E95 gui=NONE
     hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
-    hi TabLineSel ctermbg=235 ctermfg=168 cterm=NONE guibg=#1e2531 guifg=#EF586C gui=NONE
+    hi TabLineSel ctermbg=235 ctermfg=254 cterm=NONE guibg=#1e2531 guifg=#e4e4e4 gui=NONE
     hi Title ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
     hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
@@ -157,9 +157,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusLine ctermbg=black ctermfg=white cterm=NONE
     hi StatusLineNC ctermbg=black ctermfg=gray cterm=NONE
     hi String ctermbg=NONE ctermfg=green cterm=NONE
-    hi TabLine ctermbg=black ctermfg=white cterm=NONE
+    hi TabLine ctermbg=black ctermfg=darkgray cterm=NONE
     hi TabLineFill ctermbg=black ctermfg=gray cterm=NONE
-    hi TabLineSel ctermbg=black ctermfg=red cterm=NONE
+    hi TabLineSel ctermbg=black ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
     hi Todo ctermbg=NONE ctermfg=white cterm=underline,bold
     hi ToolbarButton ctermbg=black ctermfg=gray cterm=NONE
