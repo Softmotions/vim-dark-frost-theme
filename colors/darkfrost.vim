@@ -67,6 +67,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineSel ctermbg=235 ctermfg=254 cterm=NONE guibg=#1e2531 guifg=#e4e4e4 gui=NONE
     hi Title ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
+    hi Note ctermbg=NONE ctermfg=117 cterm=underline,bold guibg=NONE guifg=#89DDFF gui=underline,bold
     hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
     hi ToolbarLine ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
     hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#FFC142 gui=NONE
@@ -162,6 +163,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineSel ctermbg=black ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
     hi Todo ctermbg=NONE ctermfg=white cterm=underline,bold
+    hi Note ctermbg=NONE ctermfg=cyan cterm=underline,bold
     hi ToolbarButton ctermbg=black ctermfg=gray cterm=NONE
     hi ToolbarLine ctermbg=black ctermfg=NONE cterm=NONE
     hi Type ctermbg=NONE ctermfg=yellow cterm=NONE
@@ -270,6 +272,8 @@ hi link @boolean Special
 hi link @tag htmlTagname
 hi link @tag.attribute htmlArg
 hi link @tag.delimiter xmlTag
+hi link @text.warning Todo
+hi link @text.note Note
 hi link typescriptArrayMethod Function
 hi link typescriptArrayStaticMethod Function
 hi link typescriptAsyncFuncKeyword TSKeywordFunction
