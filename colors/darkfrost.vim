@@ -261,7 +261,7 @@ hi link svelteShortProp svelteExpression
 hi link svelteValue svelteExpression
 hi link svelteExpression htmlValue
 hi link @boolean Special
-hi link @conditional NormalCode
+hi link @conditional Statement
 hi link @constant.builtin Special
 hi link @constructor NormalCode
 hi link @keyword Statement
