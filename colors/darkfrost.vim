@@ -65,7 +65,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLine ctermbg=235 ctermfg=241 cterm=NONE guibg=#1e2531 guifg=#676E95 gui=NONE
     hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
     hi TabLineSel ctermbg=235 ctermfg=254 cterm=NONE guibg=#1e2531 guifg=#e4e4e4 gui=NONE
-    hi Title ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
+    hi Title ctermbg=NONE ctermfg=254 cterm=bold guibg=NONE guifg=#e4e4e4 gui=bold
     hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
     hi Note ctermbg=NONE ctermfg=117 cterm=underline,bold guibg=NONE guifg=#89DDFF gui=underline,bold
     hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
@@ -160,7 +160,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLine ctermbg=black ctermfg=darkgray cterm=NONE
     hi TabLineFill ctermbg=black ctermfg=gray cterm=NONE
     hi TabLineSel ctermbg=black ctermfg=white cterm=NONE
-    hi Title ctermbg=NONE ctermfg=white cterm=NONE
+    hi Title ctermbg=NONE ctermfg=white cterm=bold
     hi Todo ctermbg=NONE ctermfg=white cterm=underline,bold
     hi Note ctermbg=NONE ctermfg=cyan cterm=underline,bold
     hi ToolbarButton ctermbg=black ctermfg=gray cterm=NONE
@@ -275,6 +275,8 @@ hi link @text NormalCode
 hi link @type Type
 hi link @variable NormalCode
 hi link @variable.builtin Special
+hi link @text.title Title
+hi link @text.reference helpHyperTextJump
 hi link @tag htmlTagname
 hi link @tag.attribute htmlArg
 hi link @tag.delimiter xmlTag
