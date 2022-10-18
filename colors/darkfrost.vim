@@ -266,6 +266,7 @@ hi link @type Type
 hi link @constructor NormalCode
 hi link @operator Operator
 hi link @punctuation.bracket NormalCode
+hi link @punctuation.delimiter NormalCode
 hi link @punctuation.special Special
 hi link @constant.builtin Special
 hi link @variable.builtin Special
