@@ -90,7 +90,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
     hi xmlTagName ctermbg=NONE ctermfg=245 cterm=bold guibg=NONE guifg=#8a8a8a gui=bold
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
-    hi TSPunctBracket ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
@@ -186,7 +185,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
     hi xmlTagName ctermbg=NONE ctermfg=darkgray cterm=bold
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
-    hi TSPunctBracket ctermbg=NONE ctermfg=white cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
     hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
@@ -252,6 +250,7 @@ hi link htmlSpecialTagName xmlTagName
 hi link htmlTag xmlTag
 hi link htmlValue NormalCode
 hi link TSKeyword Statement
+hi link TSPunctBracket NormalCode
 hi link TSBoolean Constant
 hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
@@ -266,6 +265,7 @@ hi link @string String
 hi link @type Type
 hi link @constructor NormalCode
 hi link @operator Operator
+hi link @punctuation.bracket NormalCode
 hi link @punctuation.special Special
 hi link @constant.builtin Special
 hi link @variable.builtin Special
