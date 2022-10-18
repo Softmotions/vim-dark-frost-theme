@@ -268,7 +268,7 @@ hi link @operator Operator
 hi link @punctuation.bracket NormalCode
 hi link @punctuation.delimiter NormalCode
 hi link @punctuation.special Special
-hi link @contitional NormalCode
+hi link @conditional NormalCode
 hi link @constant.builtin Special
 hi link @variable.builtin Special
 hi link @boolean Special
