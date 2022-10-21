@@ -249,13 +249,11 @@
 
         # Html / XML 
         [ "MatchTag", "Underlined" ],
-
         [ "xmlTagName", "NONE", darkyellow, "bold" ],
         [ "xmlArg", "NONE", gray, "bold" ],      
         [ "xmlAttrib", "xmlArg" ],
         [ "xmlCdata", "NormalCode" ],
         [ "xmlTag", "xmlTagName" ],
-
         [ "htmlTagName", "xmlTagName" ],
         [ "htmlArg", "xmlArg" ],
         [ "htmlSpecialTagName", "xmlTagName" ],
@@ -263,18 +261,18 @@
         [ "htmlValue", "NormalCode" ],
 
         # Treesitter (old)
-        [ "TSKeyword", "Statement"],
+        [ "TSPunctBracket", "@punctuation.bracket" ],
+        [ "TSPunctDelimiter", "@punctuation.delimiter" ],
+        [ "TSOperator", "@operator" ],
+        [ "TSKeyword", "@keyword" ],
+        [ "TSParameter", "@parameter" ],
+        [ "TSBoolean", "@boolean" ],
+        [ "TSTagDelimiter", "@tag.delimiter" ],
+        [ "TSTag", "@tag" ],
+        [ "TSNumber", "@number" ],
         [ "TSLabel", "NONE", blue, "underline" ],
-        [ "TSPunctBracket", "NormalCode" ],
-        [ "TSParameter", "NONE", white, "NONE" ],
-        [ "TSBoolean", "Constant"],
-        [ "TSOperator", "NONE", gray, "NONE" ], 
         [ "TSKeywordOperator", "Operator" ],
         [ "TSKeywordFunction", "Operator" ],
-        [ "TSPunctDelimiter", "NONE", gray, "NONE" ], 
-        [ "TSTag", "htmlTagName" ],
-        [ "TSTagDelimiter", "NONE", magenta, "NONE" ],
-        [ "TSNumber", "Number" ],
 
         # Svelte (old)
         [ "svelteBrace", "TSPunctBracket" ],
@@ -290,10 +288,11 @@
         [ "@keyword", "Statement" ],
         [ "@operator", "Operator" ],
         [ "@parameter", "NormalCode" ],
-        [ "@punctuation.bracket", "NormalCode" ],
-        [ "@punctuation.delimiter", "NormalCode" ],
+        [ "@punctuation.bracket", "NONE", cyan, "bold" ],
         [ "@punctuation.special", "Special" ],
+        [ "@punctuation.delimiter", "NormalCode" ],
         [ "@string", "String" ],
+        [ "@number", "Number" ],
         [ "@text", "NormalCode" ],
         [ "@type", "Type" ],
         [ "@variable", "NormalCode" ],

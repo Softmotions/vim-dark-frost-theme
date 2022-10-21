@@ -91,10 +91,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi xmlTagName ctermbg=NONE ctermfg=173 cterm=bold guibg=NONE guifg=#E98C6E gui=bold
     hi xmlArg ctermbg=NONE ctermfg=251 cterm=bold guibg=NONE guifg=#bfc7d5 gui=bold
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
-    hi TSParameter ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
-    hi TSOperator ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
-    hi TSPunctDelimiter ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
-    hi TSTagDelimiter ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
+    hi @punctuation.bracket ctermbg=NONE ctermfg=117 cterm=bold guibg=NONE guifg=#89DDFF gui=bold
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
@@ -187,10 +184,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi xmlTagName ctermbg=NONE ctermfg=darkyellow cterm=bold
     hi xmlArg ctermbg=NONE ctermfg=gray cterm=bold
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
-    hi TSParameter ctermbg=NONE ctermfg=white cterm=NONE
-    hi TSOperator ctermbg=NONE ctermfg=gray cterm=NONE
-    hi TSPunctDelimiter ctermbg=NONE ctermfg=gray cterm=NONE
-    hi TSTagDelimiter ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi @punctuation.bracket ctermbg=NONE ctermfg=cyan cterm=bold
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
@@ -251,13 +245,17 @@ hi link htmlArg xmlArg
 hi link htmlSpecialTagName xmlTagName
 hi link htmlTag xmlTag
 hi link htmlValue NormalCode
-hi link TSKeyword Statement
-hi link TSPunctBracket NormalCode
-hi link TSBoolean Constant
+hi link TSPunctBracket @punctuation.bracket
+hi link TSPunctDelimiter @punctuation.delimiter
+hi link TSOperator @operator
+hi link TSKeyword @keyword
+hi link TSParameter @parameter
+hi link TSBoolean @boolean
+hi link TSTagDelimiter @tag.delimiter
+hi link TSTag @tag
+hi link TSNumber @number
 hi link TSKeywordOperator Operator
 hi link TSKeywordFunction Operator
-hi link TSTag htmlTagName
-hi link TSNumber Number
 hi link svelteBrace TSPunctBracket
 hi link svelteShortProp svelteExpression
 hi link svelteValue svelteExpression
@@ -269,10 +267,10 @@ hi link @constructor NormalCode
 hi link @keyword Statement
 hi link @operator Operator
 hi link @parameter NormalCode
-hi link @punctuation.bracket NormalCode
-hi link @punctuation.delimiter NormalCode
 hi link @punctuation.special Special
+hi link @punctuation.delimiter NormalCode
 hi link @string String
+hi link @number Number
 hi link @text NormalCode
 hi link @type Type
 hi link @variable NormalCode
