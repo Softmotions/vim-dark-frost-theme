@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-10-21
+" Last Change: 2022-10-25
 
 hi clear
 
@@ -238,6 +238,7 @@ hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link MatchTag Underlined
 hi link xmlAttrib xmlArg
+hi link xmlAttribPunct xmlTagName
 hi link xmlCdata NormalCode
 hi link xmlTag xmlTagName
 hi link htmlTagName xmlTagName
