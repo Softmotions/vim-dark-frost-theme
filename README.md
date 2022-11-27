@@ -1,7 +1,5 @@
 # Dark Frost Color Scheme for Neovim/Vim 
 
-Vim color scheme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-
 ![screenshot](./screen2.png)
 
 ![screenshot](./screen.png)
