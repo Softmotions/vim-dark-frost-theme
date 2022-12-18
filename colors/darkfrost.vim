@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2022-12-07
+" Last Change: 2022-12-18
 
 hi clear
 
@@ -91,6 +91,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi xmlTagName ctermbg=NONE ctermfg=173 cterm=bold guibg=NONE guifg=#E98C6E gui=bold
     hi xmlArg ctermbg=NONE ctermfg=251 cterm=bold guibg=NONE guifg=#bfc7d5 gui=bold
     hi TSLabel ctermbg=NONE ctermfg=146 cterm=underline guibg=NONE guifg=#9DC4FF gui=underline
+    hi @constructor ctermbg=NONE ctermfg=251 cterm=bold guibg=NONE guifg=#bfc7d5 gui=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=117 cterm=bold guibg=NONE guifg=#89DDFF gui=bold
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
@@ -184,6 +185,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi xmlTagName ctermbg=NONE ctermfg=darkyellow cterm=bold
     hi xmlArg ctermbg=NONE ctermfg=gray cterm=bold
     hi TSLabel ctermbg=NONE ctermfg=blue cterm=underline
+    hi @constructor ctermbg=NONE ctermfg=gray cterm=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=cyan cterm=bold
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
@@ -264,7 +266,6 @@ hi link svelteExpression htmlValue
 hi link @boolean Special
 hi link @conditional Statement
 hi link @constant.builtin Special
-hi link @constructor NormalCode
 hi link @keyword Statement
 hi link @operator Operator
 hi link @parameter NormalCode
