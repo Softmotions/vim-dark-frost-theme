@@ -105,6 +105,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
     hi WarningBgSL ctermbg=16 ctermfg=215 cterm=NONE guibg=#000000 guifg=#FFC142 gui=NONE
     hi GreenBgSL ctermbg=16 ctermfg=10 cterm=NONE guibg=#000000 guifg=#00ff00 gui=NONE
+    hi WhiteBgSL ctermbg=16 ctermfg=231 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi GrayBgSL ctermbg=16 ctermfg=241 cterm=NONE guibg=#000000 guifg=#676E95 gui=NONE
     hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
     hi CyanSL ctermbg=30 ctermfg=254 cterm=NONE guibg=#00758f guifg=#e4e4e4 gui=NONE
@@ -203,6 +204,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi WarningSL ctermbg=darkyellow ctermfg=white cterm=NONE
     hi WarningBgSL ctermbg=black ctermfg=yellow cterm=NONE
     hi GreenBgSL ctermbg=black ctermfg=green cterm=NONE
+    hi WhiteBgSL ctermbg=black ctermfg=white cterm=NONE
     hi GrayBgSL ctermbg=black ctermfg=darkgray cterm=NONE
     hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
     hi CyanSL ctermbg=darkcyan ctermfg=white cterm=NONE
