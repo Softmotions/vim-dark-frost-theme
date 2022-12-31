@@ -21,11 +21,7 @@ Plug 'Softmotions/vim-dark-frost-theme'
 Once installed set the color scheme:
 
 ```vim
-colorscheme darkfrost
-```
-
-Enable 24-bit compatibility:
-
-```vim
 set termguicolors
+set background=dark
+colorscheme darkfrost
 ```
