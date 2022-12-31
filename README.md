@@ -6,6 +6,8 @@
 
 ![screenshot](./screen3.png)
 
+![screenshot](./screen4.png)
+
 ## Installation
 
 Just copy `colors/darkfrost.vim` to `~/.vim/colors`
