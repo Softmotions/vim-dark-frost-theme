@@ -1,7 +1,5 @@
 # Dark Frost Color Scheme for Neovim/Vim 
 
-![screenshot](./screen4.png)
-
 ![screenshot](./screen2.png)
 
 ![screenshot](./screen.png)
