@@ -24,9 +24,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorLine ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLineNr ctermbg=237 ctermfg=251 cterm=NONE guibg=#303b4d guifg=#bfc7d5 gui=NONE
     hi DiffAdd ctermbg=235 ctermfg=65 cterm=NONE guibg=#1e2531 guifg=#5f875f gui=NONE
-    hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#1e2531 guifg=#FFC142 gui=NONE
+    hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#1e2531 guifg=#f5b83f gui=NONE
     hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#1e2531 guifg=#aa0000 gui=NONE
-    hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#1e2531 guifg=#FFC142 gui=reverse
+    hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#1e2531 guifg=#f5b83f gui=reverse
     hi Directory ctermbg=NONE ctermfg=183 cterm=bold guibg=NONE guifg=#d7afff gui=bold
     hi Error ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
@@ -70,13 +70,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Note ctermbg=NONE ctermfg=117 cterm=underline,bold guibg=NONE guifg=#89DDFF gui=underline,bold
     hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
     hi ToolbarLine ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
-    hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#FFC142 gui=NONE
+    hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#f5b83f gui=NONE
     hi Typedef ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi Underlined ctermbg=NONE ctermfg=NONE cterm=underline guibg=NONE guifg=NONE gui=underline
     hi VertSplit ctermbg=NONE ctermfg=16 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Visual ctermbg=30 ctermfg=254 cterm=NONE guibg=#00758f guifg=#e4e4e4 gui=NONE
     hi VisualNOS ctermbg=30 ctermfg=254 cterm=underline guibg=#00758f guifg=#e4e4e4 gui=underline
-    hi WarningMsg ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#FFC142 gui=bold
+    hi WarningMsg ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#f5b83f gui=bold
     hi debugBreakpoint ctermbg=168 ctermfg=NONE cterm=NONE guibg=#EF586C guifg=NONE gui=NONE
     hi debugPC ctermbg=30 ctermfg=NONE cterm=NONE guibg=#00758f guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
@@ -103,7 +103,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi JanetSymbol ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi ErrorSL ctermbg=124 ctermfg=254 cterm=NONE guibg=#aa0000 guifg=#e4e4e4 gui=NONE
     hi WarningSL ctermbg=166 ctermfg=254 cterm=NONE guibg=#d75f00 guifg=#e4e4e4 gui=NONE
-    hi WarningBgSL ctermbg=16 ctermfg=215 cterm=NONE guibg=#000000 guifg=#FFC142 gui=NONE
+    hi WarningBgSL ctermbg=16 ctermfg=215 cterm=NONE guibg=#000000 guifg=#f5b83f gui=NONE
     hi GreenBgSL ctermbg=16 ctermfg=10 cterm=NONE guibg=#000000 guifg=#00ff00 gui=NONE
     hi WhiteBgSL ctermbg=16 ctermfg=231 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi GrayBgSL ctermbg=16 ctermfg=241 cterm=NONE guibg=#000000 guifg=#676E95 gui=NONE
@@ -342,7 +342,7 @@ let g:terminal_ansi_colors = [
         \ '#676E95',
         \ '#EF586C',
         \ '#B4E47D',
-        \ '#FFC142',
+        \ '#f5b83f',
         \ '#9DC4FF',
         \ '#d7afff',
         \ '#89DDFF',
