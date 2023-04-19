@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2023-01-28
+" Last Change: 2023-04-19
 
 hi clear
 
@@ -15,7 +15,7 @@ set background=dark
 let colors_name = "darkfrost"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#1e2531 guifg=NONE gui=NONE
+    hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#1b212c guifg=NONE gui=NONE
     hi Comment ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Constant ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
@@ -23,10 +23,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorColumn ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLine ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi CursorLineNr ctermbg=237 ctermfg=251 cterm=NONE guibg=#303b4d guifg=#bfc7d5 gui=NONE
-    hi DiffAdd ctermbg=235 ctermfg=65 cterm=NONE guibg=#1e2531 guifg=#5f875f gui=NONE
-    hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#1e2531 guifg=#f5b83f gui=NONE
-    hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#1e2531 guifg=#aa0000 gui=NONE
-    hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#1e2531 guifg=#f5b83f gui=reverse
+    hi DiffAdd ctermbg=235 ctermfg=65 cterm=NONE guibg=#1b212c guifg=#5f875f gui=NONE
+    hi DiffChange ctermbg=235 ctermfg=215 cterm=NONE guibg=#1b212c guifg=#f5b83f gui=NONE
+    hi DiffDelete ctermbg=235 ctermfg=124 cterm=NONE guibg=#1b212c guifg=#aa0000 gui=NONE
+    hi DiffText ctermbg=235 ctermfg=215 cterm=reverse guibg=#1b212c guifg=#f5b83f gui=reverse
     hi Directory ctermbg=NONE ctermfg=183 cterm=bold guibg=NONE guifg=#d7afff gui=bold
     hi Error ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
@@ -36,12 +36,12 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Identifier ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Ignore ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi IncSearch ctermbg=65 ctermfg=231 cterm=NONE guibg=#5f875f guifg=#ffffff gui=NONE
-    hi LineNr ctermbg=235 ctermfg=241 cterm=NONE guibg=#1e2531 guifg=#676E95 gui=NONE
+    hi LineNr ctermbg=235 ctermfg=241 cterm=NONE guibg=#1b212c guifg=#676E95 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
-    hi NonText ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
-    hi Normal ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
+    hi NonText ctermbg=235 ctermfg=251 cterm=NONE guibg=#1b212c guifg=#bfc7d5 gui=NONE
+    hi Normal ctermbg=235 ctermfg=251 cterm=NONE guibg=#1b212c guifg=#bfc7d5 gui=NONE
     hi NormalCode ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Pmenu ctermbg=237 ctermfg=251 cterm=NONE guibg=#303b4d guifg=#bfc7d5 gui=NONE
     hi PmenuSbar ctermbg=251 ctermfg=NONE cterm=NONE guibg=#bfc7d5 guifg=NONE gui=NONE
@@ -51,7 +51,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Question ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
     hi Search ctermbg=90 ctermfg=231 cterm=NONE guibg=#8B008B guifg=#ffffff gui=NONE
-    hi SignColumn ctermbg=235 ctermfg=241 cterm=NONE guibg=#1e2531 guifg=#676E95 gui=NONE
+    hi SignColumn ctermbg=235 ctermfg=241 cterm=NONE guibg=#1b212c guifg=#676E95 gui=NONE
     hi Special ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=168 cterm=undercurl guibg=NONE guifg=#EF586C gui=undercurl guisp=#EF586C
@@ -62,13 +62,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusLine ctermbg=16 ctermfg=254 cterm=NONE guibg=#000000 guifg=#e4e4e4 gui=NONE
     hi StatusLineNC ctermbg=16 ctermfg=251 cterm=NONE guibg=#000000 guifg=#bfc7d5 gui=NONE
     hi String ctermbg=NONE ctermfg=107 cterm=NONE guibg=NONE guifg=#87af5f gui=NONE
-    hi TabLine ctermbg=235 ctermfg=241 cterm=NONE guibg=#1e2531 guifg=#676E95 gui=NONE
-    hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
-    hi TabLineSel ctermbg=235 ctermfg=254 cterm=NONE guibg=#1e2531 guifg=#e4e4e4 gui=NONE
+    hi TabLine ctermbg=235 ctermfg=241 cterm=NONE guibg=#1b212c guifg=#676E95 gui=NONE
+    hi TabLineFill ctermbg=235 ctermfg=251 cterm=NONE guibg=#1b212c guifg=#bfc7d5 gui=NONE
+    hi TabLineSel ctermbg=235 ctermfg=254 cterm=NONE guibg=#1b212c guifg=#e4e4e4 gui=NONE
     hi Title ctermbg=NONE ctermfg=254 cterm=bold guibg=NONE guifg=#e4e4e4 gui=bold
     hi Todo ctermbg=NONE ctermfg=231 cterm=underline,bold guibg=NONE guifg=#ffffff gui=underline,bold
     hi Note ctermbg=NONE ctermfg=117 cterm=underline,bold guibg=NONE guifg=#89DDFF gui=underline,bold
-    hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1e2531 guifg=#bfc7d5 gui=NONE
+    hi ToolbarButton ctermbg=235 ctermfg=251 cterm=NONE guibg=#1b212c guifg=#bfc7d5 gui=NONE
     hi ToolbarLine ctermbg=234 ctermfg=NONE cterm=NONE guibg=#12171e guifg=NONE gui=NONE
     hi Type ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#f5b83f gui=NONE
     hi Typedef ctermbg=NONE ctermfg=173 cterm=NONE guibg=NONE guifg=#E98C6E gui=NONE
@@ -331,7 +331,7 @@ hi link IlluminatedWordRead IlluminatedWordText
 hi link IlluminatedWordWrite IlluminatedWordText
 
 let g:terminal_ansi_colors = [
-        \ '#1e2531',
+        \ '#1b212c',
         \ '#d7005f',
         \ '#5f875f',
         \ '#E98C6E',
