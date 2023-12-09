@@ -327,6 +327,7 @@ hi link typescriptTypeReference Type
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
 hi link CocErrorFloat CocErrorSign
+hi link CocHintSign Comment
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
 hi link IlluminatedWordRead IlluminatedWordText
