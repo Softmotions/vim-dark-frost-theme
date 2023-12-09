@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2023-07-27
+" Last Change: 2023-12-09
 
 hi clear
 
@@ -97,6 +97,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
     hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
     hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
+    hi CocFloating ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi JanetString ctermbg=NONE ctermfg=107 cterm=NONE guibg=NONE guifg=#87af5f gui=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
@@ -195,6 +196,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi CocFloating ctermbg=black ctermfg=NONE cterm=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi JanetString ctermbg=NONE ctermfg=green cterm=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=gray cterm=NONE
@@ -211,6 +213,7 @@ endif
 
 hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
+hi link WinSeparator VertSplit
 hi link Boolean Function
 hi link Character String
 hi link Conditional Statement
