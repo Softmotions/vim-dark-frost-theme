@@ -98,6 +98,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
     hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#676E95
     hi CocFloating ctermbg=237 ctermfg=NONE cterm=NONE guibg=#303b4d guifg=NONE gui=NONE
+    hi CocHintSign ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
     hi JanetString ctermbg=NONE ctermfg=107 cterm=NONE guibg=NONE guifg=#87af5f gui=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
@@ -197,6 +198,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi CocFloating ctermbg=black ctermfg=NONE cterm=NONE
+    hi CocHintSign ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi JanetKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi JanetString ctermbg=NONE ctermfg=green cterm=NONE
     hi JanetSymbol ctermbg=NONE ctermfg=gray cterm=NONE
@@ -327,7 +329,6 @@ hi link typescriptTypeReference Type
 hi link typescriptUnion TSPunctDelimiter
 hi link typescriptVariable TSKeyword
 hi link CocErrorFloat CocErrorSign
-hi link CocHintSign Comment
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
 hi link IlluminatedWordRead IlluminatedWordText
