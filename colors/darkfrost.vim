@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2023-12-09
+" Last Change: 2023-12-10
 
 hi clear
 
@@ -111,6 +111,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi GroupSL ctermbg=241 ctermfg=254 cterm=NONE guibg=#676E95 guifg=#e4e4e4 gui=NONE
     hi CyanSL ctermbg=30 ctermfg=254 cterm=NONE guibg=#00758f guifg=#e4e4e4 gui=NONE
     hi IlluminatedWord ctermbg=239 ctermfg=NONE cterm=NONE guibg=#3b485e guifg=NONE gui=NONE
+    hi TreesitterContextLineNumber ctermbg=235 ctermfg=244 cterm=bold guibg=#1b212c guifg=#999999 gui=bold
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -211,6 +212,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi GroupSL ctermbg=darkgray ctermfg=white cterm=NONE
     hi CyanSL ctermbg=darkcyan ctermfg=white cterm=NONE
     hi IlluminatedWord ctermbg=darkgray ctermfg=NONE cterm=NONE
+    hi TreesitterContextLineNumber ctermbg=black ctermfg=darkgray cterm=bold
 endif
 
 hi link StatusLineTerm StatusLine
