@@ -218,8 +218,6 @@ endif
 hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
 hi link WinSeparator VertSplit
-hi link MarkSignHL SignatureMarkText
-hi link MarkSignNumHL CursorLine
 hi link Boolean Function
 hi link Character String
 hi link Conditional Statement
@@ -255,6 +253,8 @@ hi link diffIsA WarningMsg
 hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
+hi link MarkSignHL SignatureMarkText
+hi link MarkSignNumHL LineNr
 hi link MatchTag Underlined
 hi link xmlAttrib xmlArg
 hi link xmlAttribPunct xmlTagName
