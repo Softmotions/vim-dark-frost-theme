@@ -85,7 +85,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpHyperTextJump ctermbg=NONE ctermfg=183 cterm=NONE guibg=NONE guifg=#d7afff gui=NONE
     hi Keyword ctermbg=NONE ctermfg=251 cterm=NONE guibg=NONE guifg=#bfc7d5 gui=NONE
     hi Number ctermbg=NONE ctermfg=168 cterm=NONE guibg=NONE guifg=#EF586C gui=NONE
-    hi MarkSignNumHL ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
     hi GitSignsAdd ctermbg=NONE ctermfg=65 cterm=bold guibg=NONE guifg=#5f875f gui=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ff0000 gui=bold
     hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#ffff00 gui=bold
@@ -187,7 +186,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpHyperTextJump ctermbg=NONE ctermfg=magenta cterm=NONE
     hi Keyword ctermbg=NONE ctermfg=gray cterm=NONE
     hi Number ctermbg=NONE ctermfg=red cterm=NONE
-    hi MarkSignNumHL ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi GitSignsAdd ctermbg=NONE ctermfg=darkgreen cterm=bold
     hi GitSignsDelete ctermbg=NONE ctermfg=red cterm=bold
     hi GitSignsChange ctermbg=NONE ctermfg=yellow cterm=bold
