@@ -219,6 +219,7 @@ hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
 hi link WinSeparator VertSplit
 hi link MarkSignHL SignatureMarkText
+hi link MarkSignNumHL CursorLine
 hi link Boolean Function
 hi link Character String
 hi link Conditional Statement
