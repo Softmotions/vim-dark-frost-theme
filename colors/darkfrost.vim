@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2023-12-10
+" Last Change: 2023-12-16
 
 hi clear
 
@@ -218,6 +218,7 @@ endif
 hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
 hi link WinSeparator VertSplit
+hi link MarkSignHL SignatureMarkText
 hi link Boolean Function
 hi link Character String
 hi link Conditional Statement
