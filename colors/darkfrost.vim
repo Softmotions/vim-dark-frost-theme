@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2023-12-16
+" Last Change: 2023-12-17
 
 hi clear
 
@@ -51,6 +51,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Question ctermbg=NONE ctermfg=150 cterm=NONE guibg=NONE guifg=#B4E47D gui=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
     hi Search ctermbg=90 ctermfg=231 cterm=NONE guibg=#8B008B guifg=#ffffff gui=NONE
+    hi CurSearch ctermbg=90 ctermfg=231 cterm=NONE guibg=#8B008B guifg=#ffffff gui=NONE
     hi SignColumn ctermbg=235 ctermfg=241 cterm=NONE guibg=#1b212c guifg=#676E95 gui=NONE
     hi Special ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#676E95 gui=NONE
@@ -152,6 +153,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Question ctermbg=NONE ctermfg=green cterm=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=blue cterm=bold
     hi Search ctermbg=darkmagenta ctermfg=white cterm=NONE
+    hi CurSearch ctermbg=darkmagenta ctermfg=white cterm=NONE
     hi SignColumn ctermbg=black ctermfg=darkgray cterm=NONE
     hi Special ctermbg=NONE ctermfg=cyan cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=darkgray cterm=NONE
