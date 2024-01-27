@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2024-01-21
+" Last Change: 2024-01-26
 
 hi clear
 
@@ -284,6 +284,8 @@ hi link svelteValue svelteExpression
 hi link svelteExpression htmlValue
 hi link @boolean Special
 hi link @conditional Statement
+hi link @repeat Statement
+hi link @storageclass Statement
 hi link @constant.builtin Special
 hi link @constructor Function
 hi link @keyword Statement
