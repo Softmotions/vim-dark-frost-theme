@@ -255,8 +255,6 @@ hi link diffIsA WarningMsg
 hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
-hi link Sneak Search
-hi link SneakCurrent CurSearch
 hi link MarkSignHL SignatureMarkText
 hi link MatchTag Underlined
 hi link xmlAttrib xmlArg
