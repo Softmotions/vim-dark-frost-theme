@@ -264,29 +264,8 @@
         [ "htmlSpecialTagName", "xmlTagName" ],
         [ "htmlTag", "xmlTag" ],
         [ "htmlValue", "NormalCode" ],
-
-        # Treesitter (old)
-        [ "TSPunctBracket", "@punctuation.bracket" ],
-        [ "TSPunctDelimiter", "@punctuation.delimiter" ],
-        [ "TSOperator", "@operator" ],
-        [ "TSKeyword", "@keyword" ],
-        [ "TSParameter", "@parameter" ],
-        [ "TSBoolean", "@boolean" ],
-        [ "TSTagDelimiter", "@tag.delimiter" ],
-        [ "TSTag", "@tag" ],
-        [ "TSNumber", "@number" ],
-        [ "TSLabel", "@label"],
-        [ "TSKeywordOperator", "@operator" ],
-        [ "TSKeywordFunction", "@operator" ],
-
-        # Svelte (old)
-        [ "svelteBrace", "TSPunctBracket" ],
-        [ "svelteShortProp", "svelteExpression" ],
-        [ "svelteValue", "svelteExpression" ],
-        [ "svelteExpression", "htmlValue" ],
-
+   
         # Treesitter
-
         [ "@boolean", "Special" ],
         [ "@conditional", "Statement" ],
         [ "@repeat", "Statement" ],
@@ -298,6 +277,7 @@
         [ "@label", "NONE", blue, "bold" ],
         [ "@parameter", "NormalCode" ],
         [ "@punctuation.bracket", "NONE", cyan, "bold" ],
+        [ "@punctuation.bracket.javadoc", "Comment" ],
         [ "@punctuation.special", "Special" ],
         [ "@punctuation.delimiter", "NormalCode" ],
         [ "@string", "String" ],
@@ -322,35 +302,6 @@
         [ "@comment.todo", "Todo" ],
         [ "@text.warning", "Todo" ],
         [ "@text.note", "Note" ],
-
-        # Yats (typescript)
-        [ "typescriptArrayMethod", "Function" ],
-        [ "typescriptArrayStaticMethod", "Function" ],
-        [ "typescriptAsyncFuncKeyword", "TSKeywordFunction" ],
-        [ "typescriptBraces", "TSPunctBracket" ],
-        [ "typescriptCall", "TSParameter" ],
-        [ "typescriptConsoleMethod", "Function" ],
-        [ "typescriptDateMethod", "Function" ],
-        [ "typescriptExport", "TSKeyword" ],
-        [ "typescriptFuncKeyword", "TSKeyword" ],
-        [ "typescriptFuncName", "Function" ],
-        [ "typescriptFunctionMethod", "Function" ],
-        [ "typescriptGlobalMethod", "Function" ],
-        [ "typescriptImport", "Include" ],
-        [ "typescriptJSONStaticMethod", "Function" ],
-        [ "typescriptNull", "TSConstBuiltin" ],
-        [ "typescriptNumberMethod", "Function" ],
-        [ "typescriptObjectMethod", "Function" ],
-        [ "typescriptObjectStaticMethod", "Function" ],
-        [ "typescriptOperator", "TSKeywordOperator"],
-        [ "typescriptParens", "TSPunctBracket"],
-        [ "typescriptPromiseStaticMethod", "Function" ],
-        [ "typescriptRegExpMethod", "Function" ], 
-        [ "typescriptStringMethod", "Function" ],
-        [ "typescriptStringStaticMethod", "Function" ],
-        [ "typescriptTypeReference", "Type" ],
-        [ "typescriptUnion", "TSPunctDelimiter" ],
-        [ "typescriptVariable", "TSKeyword" ],
 
         # CoC
         [ "CocErrorSign", "NONE", red, "bold" ],
