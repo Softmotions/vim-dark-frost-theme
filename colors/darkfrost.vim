@@ -275,7 +275,6 @@ hi link @constructor Function
 hi link @keyword Statement
 hi link @operator Operator
 hi link @parameter NormalCode
-hi link @punctuation.bracket.javadoc Comment
 hi link @punctuation.special Special
 hi link @punctuation.delimiter NormalCode
 hi link @string String
@@ -298,6 +297,7 @@ hi link @comment Comment
 hi link @comment.todo Todo
 hi link @text.warning Todo
 hi link @text.note Note
+hi link @punctuation.bracket.javadoc Comment
 hi link CocErrorFloat CocErrorSign
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
