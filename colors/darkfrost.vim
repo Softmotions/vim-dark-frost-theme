@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2025-04-21
+" Last Change: 2026-01-30
 
 hi clear
 
@@ -266,22 +266,6 @@ hi link htmlArg xmlArg
 hi link htmlSpecialTagName xmlTagName
 hi link htmlTag xmlTag
 hi link htmlValue NormalCode
-hi link TSPunctBracket @punctuation.bracket
-hi link TSPunctDelimiter @punctuation.delimiter
-hi link TSOperator @operator
-hi link TSKeyword @keyword
-hi link TSParameter @parameter
-hi link TSBoolean @boolean
-hi link TSTagDelimiter @tag.delimiter
-hi link TSTag @tag
-hi link TSNumber @number
-hi link TSLabel @label
-hi link TSKeywordOperator @operator
-hi link TSKeywordFunction @operator
-hi link svelteBrace TSPunctBracket
-hi link svelteShortProp svelteExpression
-hi link svelteValue svelteExpression
-hi link svelteExpression htmlValue
 hi link @boolean Special
 hi link @conditional Statement
 hi link @repeat Statement
@@ -291,6 +275,7 @@ hi link @constructor Function
 hi link @keyword Statement
 hi link @operator Operator
 hi link @parameter NormalCode
+hi link @punctuation.bracket.javadoc Comment
 hi link @punctuation.special Special
 hi link @punctuation.delimiter NormalCode
 hi link @string String
@@ -313,33 +298,6 @@ hi link @comment Comment
 hi link @comment.todo Todo
 hi link @text.warning Todo
 hi link @text.note Note
-hi link typescriptArrayMethod Function
-hi link typescriptArrayStaticMethod Function
-hi link typescriptAsyncFuncKeyword TSKeywordFunction
-hi link typescriptBraces TSPunctBracket
-hi link typescriptCall TSParameter
-hi link typescriptConsoleMethod Function
-hi link typescriptDateMethod Function
-hi link typescriptExport TSKeyword
-hi link typescriptFuncKeyword TSKeyword
-hi link typescriptFuncName Function
-hi link typescriptFunctionMethod Function
-hi link typescriptGlobalMethod Function
-hi link typescriptImport Include
-hi link typescriptJSONStaticMethod Function
-hi link typescriptNull TSConstBuiltin
-hi link typescriptNumberMethod Function
-hi link typescriptObjectMethod Function
-hi link typescriptObjectStaticMethod Function
-hi link typescriptOperator TSKeywordOperator
-hi link typescriptParens TSPunctBracket
-hi link typescriptPromiseStaticMethod Function
-hi link typescriptRegExpMethod Function
-hi link typescriptStringMethod Function
-hi link typescriptStringStaticMethod Function
-hi link typescriptTypeReference Type
-hi link typescriptUnion TSPunctDelimiter
-hi link typescriptVariable TSKeyword
 hi link CocErrorFloat CocErrorSign
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
