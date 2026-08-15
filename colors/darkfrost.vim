@@ -93,8 +93,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi xmlArg ctermbg=NONE ctermfg=251 cterm=bold guibg=NONE guifg=#bfc7d5 gui=bold
     hi @label ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=117 cterm=bold guibg=NONE guifg=#89DDFF gui=bold
-    hi @keyword.autark ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
-    hi @property.autark ctermbg=NONE ctermfg=30 cterm=NONE guibg=NONE guifg=#00758f gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
@@ -115,6 +113,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CyanSL ctermbg=30 ctermfg=254 cterm=NONE guibg=#00758f guifg=#e4e4e4 gui=NONE
     hi IlluminatedWord ctermbg=239 ctermfg=NONE cterm=NONE guibg=#3b485e guifg=NONE gui=NONE
     hi TreesitterContextLineNumber ctermbg=235 ctermfg=244 cterm=bold guibg=#1b212c guifg=#999999 gui=bold
+    hi @keyword.autark ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
+    hi @property.autark ctermbg=NONE ctermfg=30 cterm=NONE guibg=NONE guifg=#00758f gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -197,8 +197,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi xmlArg ctermbg=NONE ctermfg=gray cterm=bold
     hi @label ctermbg=NONE ctermfg=blue cterm=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=cyan cterm=bold
-    hi @keyword.autark ctermbg=NONE ctermfg=blue cterm=bold
-    hi @property.autark ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
@@ -219,6 +217,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CyanSL ctermbg=darkcyan ctermfg=white cterm=NONE
     hi IlluminatedWord ctermbg=darkgray ctermfg=NONE cterm=NONE
     hi TreesitterContextLineNumber ctermbg=black ctermfg=darkgray cterm=bold
+    hi @keyword.autark ctermbg=NONE ctermfg=blue cterm=bold
+    hi @property.autark ctermbg=NONE ctermfg=darkcyan cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
@@ -302,12 +302,12 @@ hi link @comment.todo Todo
 hi link @text.warning Todo
 hi link @text.note Note
 hi link @punctuation.bracket.javadoc Comment
-hi link @keyword.conditional.autark @keyword.autark
 hi link CocErrorFloat CocErrorSign
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
 hi link IlluminatedWordRead IlluminatedWordText
 hi link IlluminatedWordWrite IlluminatedWordText
+hi link @keyword.conditional.autark @keyword.autark
 
 let g:terminal_ansi_colors = [
         \ '#1b212c',
