@@ -114,7 +114,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi IlluminatedWord ctermbg=239 ctermfg=NONE cterm=NONE guibg=#3b485e guifg=NONE gui=NONE
     hi TreesitterContextLineNumber ctermbg=235 ctermfg=244 cterm=bold guibg=#1b212c guifg=#999999 gui=bold
     hi @keyword.autark ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
-    hi @property.autark ctermbg=NONE ctermfg=30 cterm=NONE guibg=NONE guifg=#00758f gui=NONE
+    hi @property.autark ctermbg=NONE ctermfg=117 cterm=NONE guibg=NONE guifg=#89DDFF gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -218,7 +218,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi IlluminatedWord ctermbg=darkgray ctermfg=NONE cterm=NONE
     hi TreesitterContextLineNumber ctermbg=black ctermfg=darkgray cterm=bold
     hi @keyword.autark ctermbg=NONE ctermfg=blue cterm=bold
-    hi @property.autark ctermbg=NONE ctermfg=darkcyan cterm=NONE
+    hi @property.autark ctermbg=NONE ctermfg=cyan cterm=NONE
 endif
 
 hi link StatusLineTerm StatusLine
