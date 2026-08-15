@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2026-01-30
+" Last Change: 2026-08-15
 
 hi clear
 
@@ -93,6 +93,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi xmlArg ctermbg=NONE ctermfg=251 cterm=bold guibg=NONE guifg=#bfc7d5 gui=bold
     hi @label ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=117 cterm=bold guibg=NONE guifg=#89DDFF gui=bold
+    hi @keyword.autark ctermbg=NONE ctermfg=146 cterm=bold guibg=NONE guifg=#9DC4FF gui=bold
+    hi @property.autark ctermbg=NONE ctermfg=30 cterm=NONE guibg=NONE guifg=#00758f gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=168 cterm=bold guibg=NONE guifg=#EF586C gui=bold
     hi CocMenuSel ctermbg=65 ctermfg=254 cterm=NONE guibg=#5f875f guifg=#e4e4e4 gui=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#EF586C
@@ -195,6 +197,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi xmlArg ctermbg=NONE ctermfg=gray cterm=bold
     hi @label ctermbg=NONE ctermfg=blue cterm=bold
     hi @punctuation.bracket ctermbg=NONE ctermfg=cyan cterm=bold
+    hi @keyword.autark ctermbg=NONE ctermfg=blue cterm=bold
+    hi @property.autark ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=bold
     hi CocMenuSel ctermbg=darkgreen ctermfg=white cterm=NONE
     hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=undercurl
@@ -298,6 +302,7 @@ hi link @comment.todo Todo
 hi link @text.warning Todo
 hi link @text.note Note
 hi link @punctuation.bracket.javadoc Comment
+hi link @keyword.conditional.autark @keyword.autark
 hi link CocErrorFloat CocErrorSign
 hi link JanetStringDelimiter JanetString
 hi link IlluminatedWordText IlluminatedWord
