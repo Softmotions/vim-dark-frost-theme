@@ -2,7 +2,7 @@
 " Author:      Adamansky Anton (adamansky@gmail.com)
 " Webpage:     https://github.com/Softmotions/vim-dark-frost-theme
 " Description: Dark Frost color theme inspired by VSCode sandricoprovo/dark-frost-vscode-theme
-" Last Change: 2026-08-15
+" Last Change: 2026-08-17
 
 hi clear
 
@@ -308,6 +308,7 @@ hi link IlluminatedWordText IlluminatedWord
 hi link IlluminatedWordRead IlluminatedWordText
 hi link IlluminatedWordWrite IlluminatedWordText
 hi link @keyword.conditional.autark @keyword.autark
+hi link @literal.autark Normal
 
 let g:terminal_ansi_colors = [
         \ '#1b212c',
